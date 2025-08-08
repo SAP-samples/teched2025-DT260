@@ -7,7 +7,8 @@
   <summary>Click to expand!</summary>
 
    Bilder
-   <img src="images/dummy.png" alt="description" width="50%">
+   <img src="images/dummy.png" alt="optional description" width="50%">
+   <br>![optional description](/exercises/ex1/images/dummy.png)
 
 </details>
 
