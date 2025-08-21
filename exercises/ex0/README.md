@@ -1,10 +1,16 @@
-# Level 1 Heading
+# Getting Started
 
 In this exercise, you will...
 
-## Level 2 Heading
+## Introduction
 
-After completing these steps you will have....
+1. The screenshots in this document have been taken using group ID **`00`** and system **`HE4`**. 
+
+2. Please note that ADT dialogs and views, as well as Fiori UIs, may change in future releases.
+
+3. You can find a solution for this workshop in the development package **`ZDT260_SOLUTION_5`**, or you can import it from [here](https://github.com/SAP-samples/abap-platform-rap120/) into the relevant system if not yet available.
+
+**Now, let's get started!**
 
 1.	Click here.
 <br>![](/exercises/ex0/images/00_00_0010.png)
