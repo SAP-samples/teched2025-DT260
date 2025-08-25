@@ -135,25 +135,23 @@ Save and activate your class and execute **Recheck** on your ATC result list. Yo
 
 ## Exercise 1.3 Move the ABAP Cloud ready development objects to the ABAP Cloud development package
 
-After completing these steps you will have created...
+After completing these steps you will have switched the ABAP language version to *ABAP for Cloud Development* and moved your cloud enabled developemnt objects to your ABAP Cloud package **`ZDT260_EX_##_5`**
 
-1. Click here.
-<br>![](/exercises/ex1/images/01_01_0010.png)
+1. Open **Properties** view (menu **Window->Show View->Properties**). Display the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** subsequently in the **Properties** view (context menu in the project explorer **Show In -> Properties**) and on the ***General*** tab switch the language version using the **Edit..** button to *ABAP for Cloud Development*. Save and activate.
 
-2.	Insert this line of code and replace **##** with your group number.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
-```
+<br>![](/exercises/ex1/images/dt260_ex1_14_switch_lgv_5.png)
+
+2.	Move the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** to the ABAP Cloud development package **`ZDT260_EX_##_5`** by selecting subsequently the context menu **Change Package Assignment...** and providing **`ZDT260_EX_##_5`**
+as a new package on the wizard. Clicking the **Next** button will complete the package assignement.
+
+<br>![](/exercises/ex1/images/dt260_ex1_15_chg_pkg_assign_cloud.png)
+
+3.	As a result your ABAP Cloud ready artifacts the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** are now moved to the ABAP Cloud development package **`ZDT260_EX_##_5`** whereby the ABAP program  **`ZFLIGHT_EVALUATION_EX_##`** and the CDS view **`ZDT260_C_SBOOK_EX_##`** remain in the standard ABAP package **`ZDT260_EX_##`**
+
+<br>![](/exercises/ex1/images/dt260_ex1_16_chg_pkg_assign_cloud_result.png)
 
 ## Summary
 
-You've now ...
-
+You've now got to know the SAPGUI-based Flight Evaluation application, analyzed its application logic for ABAP Cloud readiness, adapted the related development artifacts to the ABAP Cloud, created your own custom CDS view for missing SAP released CDS view for ABAP Cloud and moved ABAP Cloud artifacts to the ABAP Cloud development package.
 Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
 
