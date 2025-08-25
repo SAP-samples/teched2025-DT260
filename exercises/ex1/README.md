@@ -2,11 +2,11 @@
 
 The Flight Evaluation application was developed with classic ABAP and is designed to collect customer feedback for the flights of different flight companies with regard to meal, flight and service quality.
 The rating is based on the 0-to-5 scale, with 0 representing the lowest possible score (e.g., "very poor" or "unsatisfactory") and 5 representing the highest (e.g., "outstanding"). 
-In this exercise, you will modernize the Flight Evaluation application using ABAP Cloud developemnt model. 
+In this exercise, you will modernize the Flight Evaluation application using ABAP Cloud developement model. 
 
 ## Exercise 1.1 Get to know the Flight Evaluation application and analyze it for ABAP Cloud with ABAP test cockpit (ATC)
 
-After completing these steps you will have understood how the Flight Evaluation application works and executed ABAP test cockpit (ATC) ABAP Cloud readiness checks to get the ATC result list of the incompatibilities issues with ABAP Cloud.
+After completing these steps you will have understood how the Flight Evaluation application works and executed ABAP test cockpit (ATC) ABAP Cloud readiness checks to get the ATC result list of the incompatible issues with ABAP Cloud.
 
 1. Click here.
 <br>![](/exercises/ex1/images/dt260_ex1_1_start_abap_program.png)
