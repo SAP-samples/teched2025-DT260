@@ -27,22 +27,99 @@ After completing these steps you will have understood how the Flight Evaluation 
 
 ## Exercise 1.2 Transform the application logic to the ABAP Cloud
 
-After completing these steps you will have...
+After completing these steps you will have adopted the application logic of the Flight Evaluation application in the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** to ABAP Cloud development model.
 
-1.	Enter this code.
+1.	Take a look at your ABAP test cockpit (ATC) result list. It contains 10 errors and 4 warnings. Some of the ATC findings there have a yellow light bulb, which indicates, that such findings can be fixed in a semi-automated way by using quick fixes. First apply all available quick fixes by proceeding as follows. Select all findings in the ATC result list (**Ctrl + A** shortcut) and use the context menu **Recommended Quick Fixes**. The wizard will display all ATC findings, which can be adapted with the quick fixes. Select the **Post Processing** steps **Activate changed objects** and **Recheck**. Click the **Next** button. The next wizard screen will dsiplay the source code of the class in the original state and after applying the quick fxes. ***OPTIONAL:*** *You can review the changes by using* ***Up*** and ***Down*** *buttons on the right upper side of the editors toolbar of the wizard.*. Fnally click the **Finish** button to apply all changes.
+   
+<br>![](/exercises/ex1/images/dt260_ex1_5_run_quick_fixes.png)
+
+2. Since you have selected the post processing steps in the quick fixes wizard, your ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** will be saved and activated, and ATC will recheck it automatically with the ABAP Cloud readiness checks. *NOTE: if you have not chosen the prost processing steps in the quick fixes wizard, you would need to manually save and activate your ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and rerun ATC with ABAP_CLOUD_READINESS check variant.*. After applying the quickfixes you will have out of 10 errors and 4 warnings only 4 remaining errors in your ATC result list, whcih you would need now to fix manually.
+   
+<br>![](/exercises/ex1/images/dt260_ex1_6_atc_result_after_quick_fixes.png)
+
+3.	Let's take a look at the explanation of the first error by doublie-clicking and displaying it in the **Details** view. The error description states, that your source code calls the function module **GUID_CREATE**, which is not released for ABAP Cloud. Instead of this the succesor API provided by the class **CL_SYSTEM_UUID** must be used.   
+   
+<br>![](/exercises/ex1/images/dt260_ex1_7_fix_guid.png)
+
+   Replace the method **create_guid** with this code and replace **##** with your group number.
+   
 ```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
-
+  METHOD create_guid.
+    TRY.
+        cl_system_uuid=>create_uuid_x16_static(
+          RECEIVING
+            uuid = guid
+        ).
+      CATCH cx_uuid_error.
+    ENDTRY.
+  ENDMETHOD.
 ```
+   Save and activate your class and recheck it by ATC using context menu **Recheck**. You will see, that this ATC error was gone and now you have only 3 errors.
+   
+<br>![](/exercises/ex1/images/dt260_ex1_8_atc_recheck.png)
 
-2.	Click here.
-<br>![](/exercises/ex1/images/01_02_0010.png)
+4.	Let's take a look at the explanation of the last error in the ATC result list by doublie-clicking and displaying it in the **Details** view. The error description states, that for the flight date your source code uses the **s_date** Data Element, which is not released for ABAP Cloud.
+   
+<br>![](/exercises/ex1/images/dt260_ex1_9_atc_date_issue.png)
+
+   To correct this ATC error you will need to use the released for ABAP Cloud **d** Data Element. Correct your code as follows:
+   
+<br>![](/exercises/ex1/images/dt260_ex1_10_atc_date_issue_fixed.png)
+
+5. After ATC recheck you will see that you have only 2 remaining ATC errors. By doublie-clicking on these errors and displaying them in the **Details** view you will see, that they result of direct accesses in your code to the SAP standard tables **SBOOK** and **SCUSTOM** in the **SELECT**-statement. ABAP Cloud developemnt rules prescribe that all SAP standard tables must be accessed not directly by using the SAP released CDS views. But there is no SAP relased CDS view provided as a successor in this error result. Therefore you need to create your own CDS view.
+   
+<br>![](/exercises/ex1/images/dt260_ex1_11_atc_tables_issues.png)
+
+6. Since the SAP released CDS view doe 
+
+<br>![](/exercises/ex1/images/dt260_ex1_12_create_cds_view.png)
+ds
+<br>![](/exercises/ex1/images/dt260_ex1_13_replace_cds.png)
+
+Enter this code and replace **##** with your group number.
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Data Definition'
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.usageType:{
+    serviceQuality: #X,
+    sizeCategory: #S,
+    dataClass: #MIXED
+}
+define view entity ZDT260_C_SBOOK_EX_## as select from sbook   as booking
+    inner join   scustom as customer on customer.id = booking.customid
+
+{
+  key cast ( booking.carrid as s_carr_id preserving type )        as CarrId,
+  key cast ( booking.connid as s_conn_id preserving type )        as ConnId,
+  key cast ( booking.fldate as s_date preserving type )           as Fldate,
+  key cast ( booking.bookid as s_book_id preserving type )        as BookId,
+      cast ( booking.customid as s_customer preserving type )     as CustomId,
+      booking.custtype                                            as Custtype,
+      booking.smoker                                              as Smoker,
+      @Semantics.quantity.unitOfMeasure: 'Wunit'
+      booking.luggweight                                          as Luggweight,
+      cast ( booking.wunit as s_weiunit preserving type )         as Wunit,
+      booking.invoice                                             as Invoice,
+      booking.class                                               as Class,
+      @Semantics.amount.currencyCode: 'Forcurkey'
+      booking.forcuram                                            as Forcuram,
+      cast ( booking.forcurkey as s_currcode preserving type )    as Forcurkey,
+      @Semantics.amount.currencyCode: 'Loccurkey'
+      booking.loccuram                                            as Loccuram,
+      cast ( booking.loccurkey as s_currcode preserving type )    as Loccurkey,
+      booking.order_date                                          as OrderDate,
+      cast ( booking.counter as s_countnum preserving type )      as Counter,
+      cast ( booking.agencynum   as s_agncynum  preserving type ) as Agencynum,
+      booking.cancelled                                           as Cancelled,
+      booking.reserved                                            as Reserved,
+      booking.passname                                            as Passname,
+      booking.passform                                            as Passform,
+      booking.passbirth                                           as Passbirth,
+      customer.name                                               as Name
+}
+```
 
 ## Exercise 1.3 Move the ABAP Cloud ready development objects to the ABAP Cloud development package
 
@@ -51,9 +128,15 @@ After completing these steps you will have created...
 1. Click here.
 <br>![](/exercises/ex1/images/01_01_0010.png)
 
-2.	Insert this line of code.
+2.	Insert this line of code and replace **##** with your group number.
 ```abap
-response->set_text( |Hello World! | ). 
+DATA(lt_params) = request->get_form_fields(  ).
+READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
+  IF sy-subrc <> 0.
+    response->set_status( i_code = 400
+                     i_reason = 'Bad request').
+    RETURN.
+  ENDIF.
 ```
 
 ## Summary
