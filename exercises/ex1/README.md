@@ -138,14 +138,6 @@ After completing these steps you will have adopted the application logic of the 
 ## Exercise 1.3 Move the ABAP Cloud ready development objects to the ABAP Cloud development package
 
 After completing these steps you will have switched the ABAP language version to *ABAP for Cloud Development* and moved your ABAP Cloud ready development objects to your ABAP Cloud package **`ZDT260_EX_##_5`**. Before you move your ABAP Cloud ready artifacts to your ABAP Cloud development package, you need to switch their language version to *ABAP for Cloud Development*.
-
-1. If you now try to switch the ABAP language version of your class **`ZCL_FLIGHT_EVALUATION_EX_##`** (in the **Properties** view (menu **Window->Show View->Properties**). Display the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** subsequently in the **Properties** view (context menu in the project explorer **Show In -> Properties**) and on the ***General*** tab switch the language version using the **Edit..** button to *ABAP for Cloud Development*. Save and activate.
-
-   <br>![](/exercises/ex1/images/dt260_ex1_13_release_cds.png)
-   
-1. First your custom CDS view must be released for use Open **Properties** view (menu **Window->Show View->Properties**). Display the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** subsequently in the **Properties** view (context menu in the project explorer **Show In -> Properties**) and on the ***General*** tab switch the language version using the **Edit..** button to *ABAP for Cloud Development*. Save and activate.
-
-   <br>![](/exercises/ex1/images/dt260_ex1_13_release_cds.png)
    
 1. Open **Properties** view (menu **Window->Show View->Properties**). Display the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** subsequently in the **Properties** view (context menu in the project explorer **Show In -> Properties**) and on the ***General*** tab switch the language version using the **Edit..** button to *ABAP for Cloud Development*. Save and activate.
 
@@ -160,6 +152,13 @@ as a new package on the wizard. Clicking the **Next** button will complete the p
 
    <br>![](/exercises/ex1/images/dt260_ex1_16_chg_pkg_assign_cloud_result.png)
 
+1. If you now try to switch the ABAP language version of your class **`ZCL_FLIGHT_EVALUATION_EX_##`** (in the **Properties** view (menu **Window->Show View->Properties**). Display the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** subsequently in the **Properties** view (context menu in the project explorer **Show In -> Properties**) and on the ***General*** tab switch the language version using the **Edit..** button to *ABAP for Cloud Development*. Save and activate.
+
+   <br>![](/exercises/ex1/images/dt260_ex1_13_release_cds.png)
+   
+1. First your custom CDS view must be released for use Open **Properties** view (menu **Window->Show View->Properties**). Display the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** subsequently in the **Properties** view (context menu in the project explorer **Show In -> Properties**) and on the ***General*** tab switch the language version using the **Edit..** button to *ABAP for Cloud Development*. Save and activate.
+
+   <br>![](/exercises/ex1/images/dt260_ex1_13_release_cds.png)
 ## Summary
 
 You've now got to know the SAPGUI-based Flight Evaluation application, analyzed its application logic for ABAP Cloud readiness, adapted the related development artifacts to the ABAP Cloud, created your own custom CDS view for missing SAP released CDS view for ABAP Cloud and moved ABAP Cloud artifacts to the ABAP Cloud development package.
