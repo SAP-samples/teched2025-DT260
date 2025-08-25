@@ -1,6 +1,6 @@
 # Getting Started
 
-In this exercise, you will prepare your ABAP development tools in Eclipse environment, create ABAP Project and development packages
+In this exercise, you will prepare your ABAP development tools for Eclipse environment, create ABAP development project and select development packages required for your exercises 1-3.
 
 ## Introduction
 
@@ -24,7 +24,9 @@ In this exercise, you will prepare your ABAP development tools in Eclipse enviro
 4. Finally add the solution package **`ZDT260_SOLUTION_5`** and the package **`ZDT260_FLIGHT_EVALUATION`** to your Favorite Packages. 
 <br>![](/exercises/ex0/images/dt260_ex0_4_favorites.png)
 
+4. Take a look at your packages (double-click on the package name to open it in the editor). The package **`ZDT260_EX_##`** has a standard ABAP language version, there your initial ABAP development objects are stored. The package **`ZDT260_EX_##_5`** has a cloud ABAP language version, there you will store your cloud ready ABAP development objects after modernization.
+<br>![](/exercises/ex0/images/dt260_ex0_5_pkgs_0_5.png)
 ## Summary
 
-Now that you have ... 
+Now you have set up your ABAP project and selected your development packages in your ABAP development tools for Eclipse development environment.
 Continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)
