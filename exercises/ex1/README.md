@@ -152,13 +152,16 @@ as a new package on the wizard. Clicking the **Next** button will complete the p
 
    <br>![](/exercises/ex1/images/dt260_ex1_16_chg_pkg_assign_cloud_result.png)
 
-1. If you now try to switch the ABAP language version of your class **`ZCL_FLIGHT_EVALUATION_EX_##`** (in the **Properties** view (menu **Window->Show View->Properties**). Display the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** subsequently in the **Properties** view (context menu in the project explorer **Show In -> Properties**) and on the ***General*** tab switch the language version using the **Edit..** button to *ABAP for Cloud Development*. Save and activate.
+4. Now activate the table **`ZFLEVAL_EX_##`** and the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`**. While activating the class you will get the error message stating hat the class has syntax errors and requestng you to run syntax check. Execute syntax check for the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** (shortcut **Ctrl + F2**) and take a look at the syntax errors. They all are caused by accesses to the CDS view **`ZDT260_C_SBOOK_EX_##`**. The rules of ABAP Cloud development prescribe, that ABAP Cloud artefacts can only access development objects, which are released for ABAP Cloud. The CDS view must be released for internal ABAP Cloud consumption in the system. Let's do it in the next step.
+
+   <br>![](/exercises/ex1/images/dt260_ex1_14_activate_syntax_errors.png)
+   
+5. Go to your CDS view **`ZDT260_C_SBOOK_EX_##`** in the project explorer and click the context menu **API State -> Add Use System-Internally (Contract C1)...** . Follow the wizard by clicking the **Next** btton and **Finish** to release the CDS view for use in ABAP Cloud development internally in this development system.
 
    <br>![](/exercises/ex1/images/dt260_ex1_13_release_cds.png)
    
-1. First your custom CDS view must be released for use Open **Properties** view (menu **Window->Show View->Properties**). Display the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** subsequently in the **Properties** view (context menu in the project explorer **Show In -> Properties**) and on the ***General*** tab switch the language version using the **Edit..** button to *ABAP for Cloud Development*. Save and activate.
-
-   <br>![](/exercises/ex1/images/dt260_ex1_13_release_cds.png)
+6. Finally you can activate the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`**.
+   
 ## Summary
 
 You've now got to know the SAPGUI-based Flight Evaluation application, analyzed its application logic for ABAP Cloud readiness, adapted the related development artifacts to the ABAP Cloud, created your own custom CDS view for missing SAP released CDS view for ABAP Cloud and moved ABAP Cloud artifacts to the ABAP Cloud development package.
