@@ -70,13 +70,12 @@ After completing these steps you will have adopted the application logic of the 
    
 <br>![](/exercises/ex1/images/dt260_ex1_11_atc_tables_issues.png)
 
-6. Since the SAP released CDS view doe 
+6. Create your own CDS view **`ZDT260_C_SBOOK_EX_##`** by proceeding as follows. Go to your ABAP package **`ZDT260_EX_##`** in the project explorer and using the context menu select **New->Other ABAP Repository Object**, choose **Data Definition** and click the **Next** button. Click further **Next** button and choose **defineViewEntity** from the CDS Data Definition templates. Click the **Finish** button.
 
 <br>![](/exercises/ex1/images/dt260_ex1_12_create_cds_view.png)
-ds
-<br>![](/exercises/ex1/images/dt260_ex1_13_replace_cds.png)
 
-Enter this code and replace **##** with your group number.
+Replace the source code in the editor window with this code and replace **##** with your group number. Save and activate your CDS view.
+
 ```abap
 @AbapCatalog.viewEnhancementCategory: [#NONE]
 @AccessControl.authorizationCheck: #NOT_REQUIRED
@@ -120,6 +119,19 @@ define view entity ZDT260_C_SBOOK_EX_## as select from sbook   as booking
       customer.name                                               as Name
 }
 ```
+7.Replace the **SELECT FROM SBOOK**-statement with this code, using your new CDS view.
+
+```abap
+    SELECT FROM zdt260_c_sbook_ex_00 AS booking FIELDS *
+      WHERE booking~carrid = @i_carrid
+        AND booking~connid = @i_connid
+        AND booking~fldate = @i_fldate
+        INTO CORRESPONDING FIELDS OF TABLE @it_eval.
+```
+
+Save and activate your class and execute **Recheck** on your ATC result list. You will see, that all your ATC findings were resolved and the ATC result list is now empty.
+
+<br>![](/exercises/ex1/images/dt260_ex1_13_replace_cds.png)
 
 ## Exercise 1.3 Move the ABAP Cloud ready development objects to the ABAP Cloud development package
 
