@@ -34,4 +34,4 @@ In this exercise, you will prepare your ABAP development tools for Eclipse envir
 ## Summary
 
 Now you have set up your ABAP project and selected your development packages in your ABAP development tools for Eclipse development environment.
-Continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)
+Continue to - [Exercise 1 - Modernize the Flight Evaluation application with ABAP Cloud](../ex1/README.md)
