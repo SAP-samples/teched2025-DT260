@@ -12,7 +12,7 @@ After completing these steps you will have understood how the Flight Evaluation 
    
    <br>![](/exercises/ex1/images/dt260_ex1_1_start_abap_program.png)
 
-2. The flight evaluation program will display the customer data (like booking id, customer number, customer name) for the selected flight and flight date along with the customer ratings for meal, flight and service. Double-click on a table row and enter a customer rating for meal, flight and service of the selected customer on the used flight connection. Play around with the flight evaluation application to get to know it: you can sort the table and enter further customers evaluations.
+2. The ABAP program **`ZFLIGHT_EVALUATION_EX_##`** will display the customer data (like booking id, customer number, customer name) for the selected flight and flight date along with the customer ratings for meal, flight and service. Double-click on a table row and enter a customer rating for meal, flight and service of the selected customer on the used flight connection. Play around with the program to get to know it: e.g. you can sort the table and enter further customers evaluations.
    
    <br>![](/exercises/ex1/images/dt260_ex1_2_enter_data_abap_program.png)
 
