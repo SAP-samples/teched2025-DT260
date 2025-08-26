@@ -30,7 +30,7 @@ After completing these steps you will have understood how the Flight Evaluation 
 After completing these steps you will have adopted the application logic of the Flight Evaluation application in the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** to ABAP Cloud development model.
 
 1.	Take a look at your ABAP test cockpit (ATC) result list. It contains 10 errors and 4 warnings. Some of the ATC findings there have a yellow light bulb, which indicates, that such findings can be fixed in a semi-automated way by using quick fixes. First apply all available quick fixes by proceeding as follows. Select all findings in the ATC result list (**Ctrl + A** shortcut) and use the context menu **Recommended Quick Fixes**. The wizard will display all ATC findings, which can be adapted with the quick fixes. Select the **Post Processing** steps **Activate changed objects** and **Recheck**. Click the **Next** button. The next wizard screen will dsiplay the source code of the class in the original state and after applying the quick fxes. ***OPTIONAL:*** *You can review the changes by using* ***Up*** and ***Down*** *buttons on the right upper side of the editors toolbar of the wizard.*. Fnally click the **Finish** button to apply all changes.
-   
+
    <br>![](/exercises/ex1/images/dt260_ex1_5_run_quick_fixes.png)
 
 2. Since you have selected the post processing steps in the quick fixes wizard, your ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** will be saved and activated, and ATC will recheck it automatically with the ABAP Cloud readiness checks. *NOTE: if you have not chosen the prost processing steps in the quick fixes wizard, you would need to manually save and activate your ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and rerun ATC with ABAP_CLOUD_READINESS check variant.*. After applying the quick fixes you will have out of 10 errors and 4 warnings only 4 remaining errors in your ATC result list, which you would need now to fix manually.
@@ -38,25 +38,24 @@ After completing these steps you will have adopted the application logic of the 
    <br>![](/exercises/ex1/images/dt260_ex1_6_atc_result_after_quick_fixes.png)
 
 3.	Let's take a look at the explanation of the first error by doublie-clicking and displaying it in the **Details** view. The error description states, that your source code calls the function module **GUID_CREATE**, which is not released for ABAP Cloud. Instead of this the succesor API provided by the class **CL_SYSTEM_UUID** must be used.   
-   
    <br>![](/exercises/ex1/images/dt260_ex1_7_fix_guid.png)
 
    Replace the method **create_guid** with this code and replace **##** with your group number.
    
    ```abap
-     METHOD create_guid.
-       TRY.
-           cl_system_uuid=>create_uuid_x16_static(
-             RECEIVING
-               uuid = guid
-           ).
-         CATCH cx_uuid_error.
-       ENDTRY.
-     ENDMETHOD.
+   METHOD create_guid.
+    TRY.
+        cl_system_uuid=>create_uuid_x16_static(
+          RECEIVING
+            uuid = guid
+        ).
+      CATCH cx_uuid_error.
+    ENDTRY.
+   ENDMETHOD.
    ```
    Save and activate your class and recheck it by ATC using context menu **Recheck**. You will see, that this ATC error was gone and now you have only 3 errors.
    
-<br>![](/exercises/ex1/images/dt260_ex1_8_atc_recheck.png)
+   <br>![](/exercises/ex1/images/dt260_ex1_8_atc_recheck.png)
 
 4.	Let's take a look at the explanation of the last error in the ATC result list by doublie-clicking and displaying it in the **Details** view. The error description states, that for the flight date your source code uses the **s_date** Data Element, which is not released for ABAP Cloud.
    
