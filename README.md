@@ -18,7 +18,7 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 
 - [Getting Started](exercises/ex0/)
 - [Exercise 1 - Modernize the Flight Evaluation application with ABAP Cloud](exercises/ex1/)
-    - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
+    - [Exercise 1.1 - Get to know the Flight Evaluation application and analyze it for ABAP Cloud with ABAP test cockpit (ATC)](exercises/ex1#exercise-11-get-to-know-the-flight-evaluation-application-and-analyze-it-for-abap-cloud-with-abap-test-cockpit-atc)
     - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
 - [Exercise 2 - Second Exercise Description](exercises/ex2/)
     - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
