@@ -61,11 +61,11 @@ After completing these steps you will have adopted the application logic of the 
    
    <br>![](/exercises/ex1/images/dt260_ex1_9_atc_date_issue.png)
 
-   To correct this ATC error you will need to use the released for ABAP Cloud **d** Data Element. Correct your code as follows:
+   To correct this ATC error you will need to use the released for ABAP Cloud **d** Data Element. Correct your code as follows and recheck it with ATC. Only 2 ATC issues will remain in the result.
    
    <br>![](/exercises/ex1/images/dt260_ex1_10_atc_date_issue_fixed.png)
 
-5. After ATC recheck you will see that you have only 2 remaining ATC errors. By doublie-clicking on these errors and displaying them in the **Details** view you will see, that they result of direct accesses in your code to the SAP standard tables **SBOOK** and **SCUSTOM** in the **SELECT**-statement. ABAP Cloud developemnt rules prescribe that all SAP standard tables must be accessed not directly by using the SAP released CDS views. But there is no SAP relased CDS view provided as a successor in this error result. Therefore you need to create your own CDS view.
+5. By doublie-clicking on remaining ATC issues and displaying them in the **Details** view you will see, that they are caused by direct accesses in your code to the SAP standard tables **SBOOK** and **SCUSTOM** in the **SELECT**-statement. ABAP Cloud developemnt rules prescribe that all SAP standard tables must be accessed not directly but by using the SAP released CDS views. But there is no SAP relased CDS view provided as a successor in this error result. Therefore you need to create your own CDS view.
    
    <br>![](/exercises/ex1/images/dt260_ex1_11_atc_tables_issues.png)
 
