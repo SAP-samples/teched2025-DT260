@@ -1,7 +1,7 @@
 # Exercise 3
 
 
-## Exercise 3.1
+## Exercise 3.1 - Clean Core Check with Clean Core Dashboard
 ### Exercise 3.1.1
  <details>
   <summary>Click to expand!</summary>
