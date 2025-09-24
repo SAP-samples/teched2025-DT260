@@ -33,14 +33,14 @@ After completing these steps you will have adopted the application logic of the 
 
    <br>![](/exercises/ex1/images/dt260_ex1_5_run_quick_fixes.png)
 
-2. Since you have selected the post processing steps in the quick fixes wizard, your ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** will be saved and activated, and ATC will recheck it automatically with the ABAP Cloud readiness checks. *NOTE: if you have not chosen the prost processing steps in the quick fixes wizard, you would need to manually save and activate your ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and rerun ATC with ABAP_CLOUD_READINESS check variant.*. After applying the quick fixes you will have out of 10 errors and 4 warnings only 4 remaining errors in your ATC result list, which you would need now to fix manually.
+2. Since you have selected the post processing steps in the quick fixes wizard, your ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** will be saved and activated, and ATC will recheck it automatically with the ABAP Cloud readiness checks. *NOTE: if you have not chosen the post processing steps in the quick fixes wizard, you would need to manually save and activate your ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and rerun ATC with ABAP_CLOUD_READINESS check variant.*. After applying the quick fixes you will have out of 10 errors and 4 warnings only 4 remaining errors in your ATC result list, which you would need now to fix manually.
    
    <br>![](/exercises/ex1/images/dt260_ex1_6_atc_result_after_quick_fixes.png)
 
 3.	Let's take a look at the explanation of the first error by doublie-clicking and displaying it in the **Details** view. The error description states, that your source code calls the function module **GUID_CREATE**, which is not released for ABAP Cloud. Instead of this the succesor API provided by the class **CL_SYSTEM_UUID** must be used.   
    <br>![](/exercises/ex1/images/dt260_ex1_7_fix_guid.png)
 
-   Replace the method **create_guid** with this code and replace **##** with your group number.
+   Replace the method **create_guid** with this code.
    
    ```abap
    METHOD create_guid.
