@@ -142,24 +142,29 @@ After completing these steps you will have switched the ABAP language version to
 
    <br>![](/exercises/ex1/images/dt260_ex1_14_switch_lgv_5.png)
 
-2.	Move the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** to the ABAP Cloud development package **`ZDT260_EX_##_5`** by selecting subsequently the context menu **Change Package Assignment...** and providing **`ZDT260_EX_##_5`**
+
+2. Before moving your development artifacts you need to release your transports, containing them. For this open the Transport Organizer using menu **Window -> Show view -> Other...** and selecting **ABAP -> Transport Organizer**. Release your transports.
+
+   <br>![](/exercises/ex1/images/dt260_ex1_17_release_transports.png)
+   
+3.	Move the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** to the ABAP Cloud development package **`ZDT260_EX_##_5`** by selecting subsequently the context menu **Change Package Assignment...** and providing **`ZDT260_EX_##_5`**
 as a new package on the wizard. Clicking the **Next** button will complete the package assignement.
 
    <br>![](/exercises/ex1/images/dt260_ex1_15_chg_pkg_assign_cloud.png)
 
-3.	As a result your ABAP Cloud ready artifacts the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** are now moved to the ABAP Cloud development package **`ZDT260_EX_##_5`** whereby the ABAP program  **`ZFLIGHT_EVALUATION_EX_##`** and the CDS view **`ZDT260_C_SBOOK_EX_##`** remain in the standard ABAP package **`ZDT260_EX_##`**
+4.	As a result your ABAP Cloud ready artifacts the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** are now moved to the ABAP Cloud development package **`ZDT260_EX_##_5`** whereby the ABAP program  **`ZFLIGHT_EVALUATION_EX_##`** and the CDS view **`ZDT260_C_SBOOK_EX_##`** remain in the standard ABAP package **`ZDT260_EX_##`**
 
    <br>![](/exercises/ex1/images/dt260_ex1_16_chg_pkg_assign_cloud_result.png)
 
-4. Now activate the table **`ZFLEVAL_EX_##`** and the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`**. While activating the class you will get the error message stating hat the class has syntax errors and requestng you to run syntax check. Execute syntax check for the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** (shortcut **Ctrl + F2**) and take a look at the syntax errors. They all are caused by accesses to the CDS view **`ZDT260_C_SBOOK_EX_##`**. The rules of ABAP Cloud development prescribe, that ABAP Cloud artefacts can only access development objects, which are released for ABAP Cloud. The CDS view must be released for internal ABAP Cloud consumption in the system. Let's do it in the next step.
+5. Now activate the table **`ZFLEVAL_EX_##`** and the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`**. While activating the class you will get the error message stating hat the class has syntax errors and requestng you to run syntax check. Execute syntax check for the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** (shortcut **Ctrl + F2**) and take a look at the syntax errors. They all are caused by accesses to the CDS view **`ZDT260_C_SBOOK_EX_##`**. The rules of ABAP Cloud development prescribe, that ABAP Cloud artefacts can only access development objects, which are released for ABAP Cloud. The CDS view must be released for internal ABAP Cloud consumption in the system. Let's do it in the next step.
 
    <br>![](/exercises/ex1/images/dt260_ex1_14_activate_syntax_errors.png)
    
-5. Go to your CDS view **`ZDT260_C_SBOOK_EX_##`** in the project explorer and click the context menu **API State -> Add Use System-Internally (Contract C1)...** . Follow the wizard by clicking the **Next** btton and **Finish** to release the CDS view for use in ABAP Cloud development internally in this development system.
+6. Go to your CDS view **`ZDT260_C_SBOOK_EX_##`** in the project explorer and click the context menu **API State -> Add Use System-Internally (Contract C1)...** . Follow the wizard by clicking the **Next** btton and **Finish** to release the CDS view for use in ABAP Cloud development internally in this development system.
 
    <br>![](/exercises/ex1/images/dt260_ex1_13_release_cds.png)
    
-6. Finally you can activate the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`**.
+7. Finally you can activate the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`**.
    
 ## Summary
 
