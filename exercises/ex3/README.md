@@ -47,7 +47,7 @@ After completing these steps you will have learned how to execute clean core ATC
 
     <br>![](/exercises/ex3/images/dt260_ex3_11_cloud_repo_noapi.png)
    
-6. The SAP objects, which are classified as **No API** should not be used in custom code and replaced by SAP released APIs or classic APIs (if successor is available, it is listed in the object classification JSON file). Click on the table row with the API **BAPI_PO_CREATE". You will see that it has successor **BAPI_PO_CREATE1** (click on that table row), which is classic API.
+6. The SAP objects, which are classified as **No API** should not be used in custom code and replaced by SAP released APIs or classic APIs (if successor is available, it is listed in the object classification JSON file). Click on the table row with the API **BAPI_PO_CREATE**. You will see that it has successor **BAPI_PO_CREATE1** (click on that table row), which is classic API. This classic API has also the label **transactional-consistent** and therefore can be used in the context of RAP-based applications (see also SAP Help Documentation about [RAP Transactional Model](https://help.sap.com/docs/ABAP_PLATFORM_NEW/fc4c71aa50014fd1b43721701471913d/ccda1094b0f845e28b88f9f50a68dfc4.html?&version=202310.002)).
 
     <br>![](/exercises/ex3/images/dt260_ex3_12_cloud_repo_successor.png)
 
