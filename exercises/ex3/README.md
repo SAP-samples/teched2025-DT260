@@ -29,7 +29,7 @@ After completing these steps you will have learned how to execute clean core ATC
 
    <br>![](/exercises/ex3/images/dt260_ex3_5_atc_clean_core_issues.png) 
    
- Some check results indicate usage of **classic APIs** and **internal APIs** in the code. This is because the new clean core check **Usage of APIs** is based on the usage guidelines for APIs. For usage of released SAP APIs no ATC findings are reported, for usage of an SAP classic APIs the check reports an info message, for usage of an API which is not classified (internal API) the check reports a warning and for usage of an API marked as **no API** an error message is reported. 
+ Some check results indicate usage of **classic APIs** and **internal APIs** in the code. This is because the new clean core check **Usage of APIs** is based on the clean core usage guidelines for SAP APIs. For usage of released SAP APIs no ATC findings are reported, for usage of an SAP classic APIs the check reports an info message, for usage of an API which is not classified (internal API) the check reports a warning and for usage of an API marked as **no API** an error message is reported. 
 
 3. SAP offers recommendations for release independent upgrade stable SAP APIs (classic APIs), which shall be used classic ABAP developments and provides the list of classic APIs  as **objectClassifications_SAP.json** on the **GitHub - SAP/abap-atc-cr-cv-s4hc**. This information is used by the ATC to govern the usage of classic APIs in custom code developments. The classic APIs are based on the SAP recommendations for classic ABAP development technologies, reuse services and application specific frameworks, which should be utilized in classic ABAP developments (see the SAP Note 3578329 for more details).
 
