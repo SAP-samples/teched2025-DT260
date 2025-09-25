@@ -15,7 +15,7 @@ After completing these steps you will have understood how the Customer Dashboard
  
    <br>![](/exercises/ex3/images/dt260_ex3_2_analyze_atc_cloud_issues.png)
    
-All these ATC findings must be fixed if adapting the custom code to ABAP Cloud but the Customer Dashboard application must just become clean core compliant, therefore the ATC check procedure must be changed to clean core.  
+For the adaptation of the code to ABAP Cloud all these ATC findings must be fixed. But in this exercise the Customer Dashboard application must just become clean core compliant, therefore the ATC check procedure must be changed to clean core.  
 
 ## Exercise 3.2 Analyze Customer Dashboard application for clean core with ABAP test cockpit (ATC) and get to know Cloudification Repository Viewer
 
