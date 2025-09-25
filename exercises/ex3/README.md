@@ -31,25 +31,27 @@ After completing these steps you will have learned how to execute clean core ATC
    
  Some check results indicate usage of **classic APIs** and **internal APIs** in the code. This is because the new clean core check **Usage of APIs** is based on the clean core usage guidelines for SAP APIs. For usage of released SAP APIs no ATC findings are reported, for usage of an SAP classic APIs the check reports an info message, for usage of an API which is not classified (internal API) the check reports a warning and for usage of an API marked as **no API** an error message is reported. 
 
-3. SAP offers recommendations for release independent upgrade stable SAP APIs (classic APIs), which shall be used in classic ABAP developments and provides the list of classic APIs  as **objectClassifications_SAP.json** on the **GitHub - SAP/abap-atc-cr-cv-s4hc**. This information is used by the ATC to govern the usage of classic APIs in custom code developments. The classic APIs are based on the SAP recommendations for classic ABAP development technologies, reuse services and application specific frameworks, which should be utilized in classic ABAP developments (see the SAP Note [3578329](https://me.sap.com/notes/3578329) for more details). Let's inspect classic APIs using the Cloudification Repository viewer on GitHub. For this click on the link below to open the viewer: [https://sap.github.io/abap-atc-cr-cv-s4hc/?version=objectClassifications_SAP.json](https://sap.github.io/abap-atc-cr-cv-s4hc/?version=objectClassifications_SAP.json).
+2. SAP offers recommendations for release independent upgrade stable SAP APIs (classic APIs), which shall be used in classic ABAP developments and provides the list of classic APIs  as **objectClassifications_SAP.json** on the **GitHub - SAP/abap-atc-cr-cv-s4hc**. This information is used by the ATC to govern the usage of classic APIs in custom code developments. The classic APIs are based on the SAP recommendations for classic ABAP development technologies, reuse services and application specific frameworks, which should be utilized in classic ABAP developments (see the SAP Note [3578329](https://me.sap.com/notes/3578329) for more details). Let's inspect classic APIs using the Cloudification Repository viewer on GitHub. For this click on the link below to open the viewer: [https://sap.github.io/abap-atc-cr-cv-s4hc/?version=objectClassifications_SAP.json](https://sap.github.io/abap-atc-cr-cv-s4hc/?version=objectClassifications_SAP.json).
 
-4. After clicking on the **Show Filter Bar** you can filter the display. Let's find the ALV Grid classic API **CL_SALV_TABLE**, which was reported by the clean core ATC checks. For this select state *Classic API*, Software Component *SAP_BASIS* and Application Component *BC-SRV-ALV* and you will get the list of all ALV Grid classic APIs including the **CL_SALV_TABLE**.
+   <br>![](/exercises/ex3/images/dt260_ex3_6_cloud_repo_viewer.png)   
+
+3. After clicking on the **Show Filter Bar** you can filter the display. Let's find the ALV Grid classic API **CL_SALV_TABLE**, which was reported by the clean core ATC checks. For this select state *Classic API*, Software Component *SAP_BASIS* and Application Component *BC-SRV-ALV* and you will get the list of all ALV Grid classic APIs including the **CL_SALV_TABLE**.
 
    <br>![](/exercises/ex3/images/dt260_ex3_7_cloud_repo_alvgrid.png)
 
-5. Now display all classic BAPIs available in the area of Material Management - Purchase Requisition. For this select State *Classic API*, Object Type *FUNC*, Software Component *S4CORE* and Application Component *MM-PUR-REQ*.
+4. Now display all classic BAPIs available in the area of Material Management - Purchase Requisition. For this select State *Classic API*, Object Type *FUNC*, Software Component *S4CORE* and Application Component *MM-PUR-REQ*.
 
    <br>![](/exercises/ex3/images/dt260_ex3_8_cloud_repo_bapi.png)
 
-6. Now display all **No API** available in the area of Material Management - Purchasing - Goods Receipts. For this select State *No API*, Software Component *S4CORE* and Application Component *MM-PUR-GF*.
+5. Now display all **No API** available in the area of Material Management - Purchasing - Goods Receipts. For this select State *No API*, Software Component *S4CORE* and Application Component *MM-PUR-GF*.
 
     <br>![](/exercises/ex3/images/dt260_ex3_11_cloud_repo_noapi.png)
    
-7. The SAP objects, which are classified as **No API** should not be used in custom code and replaced by SAP released APIs or classic APIs (if successor is available, it is listed in the object classification JSON file). Click on the table row with the API **BAPI_PO_CREATE". You will see that it has successor **BAPI_PO_CREATE1** (click on that table row), which is classic API.
+6. The SAP objects, which are classified as **No API** should not be used in custom code and replaced by SAP released APIs or classic APIs (if successor is available, it is listed in the object classification JSON file). Click on the table row with the API **BAPI_PO_CREATE". You will see that it has successor **BAPI_PO_CREATE1** (click on that table row), which is classic API.
 
     <br>![](/exercises/ex3/images/dt260_ex3_12_cloud_repo_successor.png)
 
-8. Play auround with the Cloudification Repository Viewer looking for the APIs, for example look for the API which you are familiar with, to verify if it was nominated as a classic API. By the way you can also choose another repository under **Repository Selection** and look for example for released APIs for the particular SAP S/4HANA edition.
+7. Play auround with the Cloudification Repository Viewer looking for the APIs, for example look for the API which you are familiar with, to verify if it was nominated as a classic API. By the way you can also choose another repository under **Repository Selection** and look for example for released APIs for the particular SAP S/4HANA edition.
      
 ## Exercise 3.3 Understand clean core ABAP test cockpit (ATC) issues
 
