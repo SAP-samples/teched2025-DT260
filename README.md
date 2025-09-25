@@ -10,7 +10,7 @@ In this session you will practice a clean core extensibility in SAP S/4HANA Clou
 
 ## Requirements
 
-The requirements to follow the exercises in this repository are...
+The requirements to follow the exercises in this repository are the ABAP development tools for Eclipse environment, access to the SAP TechEd backend system HE4, where all code examples are located, basic knowledge of the ABAP development tools for Eclipse and ABAP test cockpit (ATC).
 
 ## Exercises
 
