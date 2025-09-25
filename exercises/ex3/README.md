@@ -35,7 +35,12 @@ Let's inspect classic APIs using the Cloudification Repository viewer on GitHub.
 
    <br>![](/exercises/ex3/images/dt260_ex3_7_cloud_repo_alvgrid.png)
 
-5. 
+5. Now display all classic BAPIs available in the area of Material Management - Purchase Requisition. For this select State *Classic API*, Object Type *FUNC*, Software Component *S4CORE* and Application Component *MM-PUR-REQ*.
+
+   <br>![](/exercises/ex3/images/dt260_ex3_8_cloud_repo_bapi.png)
+
+6. Now
+   
    
 ## Exercise 3.3 Understand clean core ABAP test cockpit (ATC) issues
 dfdf
