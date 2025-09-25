@@ -14,8 +14,6 @@ The requirements to follow the exercises in this repository are the ABAP develop
 
 ## Exercises
 
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
-
 - [Getting Started](exercises/ex0/)
 - [Exercise 1 - Modernize the Flight Evaluation application with ABAP Cloud](exercises/ex1/)
     - [Exercise 1.1 - Get to know the Flight Evaluation application and analyze it for ABAP Cloud with ABAP test cockpit (ATC)](exercises/ex1#exercise-11-get-to-know-the-flight-evaluation-application-and-analyze-it-for-abap-cloud-with-abap-test-cockpit-atc)
