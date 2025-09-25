@@ -27,7 +27,7 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 - [Exercise 3 - Analyze the Customer Dashboard application for clean core](exercises/ex3/)
     - [Exercise 3.1 - Analyze Customer Dashboard application for ABAP Cloud with ABAP test cockpit (ATC)](exercises/ex3#exercise-31-sub-exercise-1-description)
     - [Exercise 3.2 - Execute new clean core checks with ABAP test cockpit (ATC) and get to know Cloudification Repository Viewer](exercises/ex3#exercise-32-sub-exercise-2-description)
-    - [Exercise 3.3 - Understand clean core ABAP Test Cockpit issues](exercises/ex3#exercise-33-sub-exercise-3-description)
+    - [Exercise 3.3 - Understand clean core ABAP test cockpit (ATC) issues](exercises/ex3#exercise-33-sub-exercise-3-description)
 
 ## Contributing
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
