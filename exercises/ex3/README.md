@@ -21,9 +21,13 @@ For the adaptation of the code to ABAP Cloud all these ATC findings must be fixe
 
 After completing these steps you will have learned how to execute clean core ATC checks and to work with the Cloudification Repository Viewer.
 
-1. Now it's time to analyze the Customer Dashboard application for clean core. Select the ABAP program  **`ZCUSTOMER_DASHBOARD`** in the project explorer and use the context menu **Run As->ABAP Test Cockpit With...** with the **ZDT260_CLEAN_CORE_DEVEOPMENT** check variant to execute clean core checks. You will get now just 1 error, 2 warnings and 3 information ATC issues.
+1. Now it's time to analyze the Customer Dashboard application for clean core. Select the ABAP program  **`ZCUSTOMER_DASHBOARD`** in the project explorer and use the context menu **Run As->ABAP Test Cockpit With...** with the **ZDT260_CLEAN_CORE_DEVEOPMENT** check variant to execute clean core checks. 
    
      <br>![](/exercises/ex3/images/dt260_ex3_4_run_atc_clean_core.png)
+   
+   You will get now just 1 error, 2 warnings and 3 information ATC issues:
+
+   <br>![](/exercises/ex3/images/dt260_ex3_5_atc_clean_core_issues.png) 
    
  Some check results indicate usage of **classic APIs** and **internal APIs** in the code. This is because the new clean core check **Usage of APIs** is based on the usage guidelines for APIs. For usage of released SAP APIs no ATC findings are reported, for usage of an SAP classic APIs the check reports an info message, for usage of an API which is not classified (internal API) the check reports a warning and for usage of an API marked as **no API** an error message is reported. 
 
