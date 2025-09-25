@@ -1,6 +1,6 @@
 # Exercise 3 - Analyze the Customer Dashboard application for clean core
 
-The Customer Dashboard application belongs to the the Flight Evaluation application. It was developed with classic ABAP and is designed to display the data of the specific customer along with the collected flight feedback. This application should not be modernized with ABAP Cloud but must become clean core compliant.
+The Customer Dashboard application is content-wise connected with the Flight Evaluation application. It was developed with classic ABAP and is designed to display the data of the specific customer along with the collected flight feedback. This application should not be modernized with ABAP Cloud but must become clean core compliant.
 In this exercise, you will analyze the Customer Dashboard application for ABAP Cloud and clean core, learn to understand clean core issues and why the new clean core ABAP test cockpit (ATC) checks significantly reduce the number of findings.
 
 ## Exercise 3.1 Analyze Customer Dashboard application for ABAP Cloud with ABAP test cockpit (ATC)
