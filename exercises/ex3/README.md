@@ -25,7 +25,7 @@ After completing these steps you will have learned how to execute clean core ATC
    
      <br>![](/exercises/ex3/images/dt260_ex3_4_run_atc_clean_core.png)
    
-   You will get now just 1 error, 2 warnings and 3 information ATC issues:
+   You will get now musch less ATC issues: just 1 error, 2 warnings and 3 information messages:
 
    <br>![](/exercises/ex3/images/dt260_ex3_5_atc_clean_core_issues.png) 
    
