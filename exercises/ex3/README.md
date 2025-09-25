@@ -51,7 +51,15 @@ Let's inspect classic APIs using the Cloudification Repository viewer on GitHub.
      
 ## Exercise 3.3 Understand clean core ABAP test cockpit (ATC) issues
 
-After completing these steps you will have learned how to execute clean core ATC checks and to work with the Cloudification Repository Viewer.
+After completing these steps you will have learned how the clean core ATC check variant looks like and how to understand clean core ATC check results.
 
-1. Now it's time 
+1. Open the ATC clean core check variant **ZDT260_CLEAN_CORE_DEVEOPMENT** (Open ABAP development Object (Ctrl + Shift + A)) and take a look at it. This check variant contains all necessary clean core ATC checks. You will see, that the **Usage of APIs** check is using as input for the classic APIs the **objectClassifications_SAP.json** which you inspected with the Cloudification Repository Viewer in the Exercise 3.2. You can learn how to set up the clean core ATC check variant for your own custom development in the blog post [ABAP test cockpit (ATC) recommendations for governance of clean core ABAP development](https://community.sap.com/t5/technology-blog-posts-by-sap/abap-test-cockpit-atc-recommendations-for-governance-of-clean-core-abap/ba-p/14186130).
+
+   <br>![](/exercises/ex3/images/dt260_ex3_9_cloud_cc_atc_variant.png)
+
+2. Take a look again at your last clean core ATC check results executed with the variant **ZDT260_CLEAN_CORE_DEVEOPMENT** in the Exercise 3.2. To make the code clean core compliant you would need to resolve the ATC clean core issues in the following way. Instead of update on the SAP table use released or classic SAP API, read access to the SAP table should be replaced with released CDS view or classic API, usages of classic APIs are clean core conform. More recommendations are provided in the chapter 5 of the [ABAP Extensibility Guide](https://www.sap.com/documents/2022/10/52e0cd9b-497e-0010-bca6-c68f7e60039b.html).
+   
+    <br>![](/exercises/ex3/images/dt260_ex3_10_analyze_cc_atc_findings.png)
+   
+
 ## Summary
