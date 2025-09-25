@@ -39,11 +39,19 @@ Let's inspect classic APIs using the Cloudification Repository viewer on GitHub.
 
    <br>![](/exercises/ex3/images/dt260_ex3_8_cloud_repo_bapi.png)
 
-6. Now
+6. Now display all **No API** available in the area of Material Management - Purchasing - Goods Receipts. For this select State *No API*, Software Component *S4CORE* and Application Component *MM-PUR-GF*.
+
+    <br>![](/exercises/ex3/images/dt260_ex3_11_cloud_repo_noapi.png)
    
-   
+7. The SAP objects, which are classified as **No API** should not be used in custom code and replaced by SAP released APIs or classic APIs (if successor is available, it is listed in the object classification JSON file). Click on the table row with the API **BAPI_PO_CREATE". You will see that it has successor **BAPI_PO_CREATE1** (click on that table row), which is classic API.
+
+    <br>![](/exercises/ex3/images/dt260_ex3_12_cloud_repo_successor.png)
+
+8. Play auround with the Cloudification Repository Viewer looking for the APIs, for example look for the API which you are familiar with, to verify if it was nominated as a classic API. By the way you can also choose another repository under **Repository Selection** and look for example for released APIs for the particular SAP S/4HANA edition.
+     
 ## Exercise 3.3 Understand clean core ABAP test cockpit (ATC) issues
-dfdf
-dfdf
-dfd
+
+After completing these steps you will have learned how to execute clean core ATC checks and to work with the Cloudification Repository Viewer.
+
+1. Now it's time 
 ## Summary
