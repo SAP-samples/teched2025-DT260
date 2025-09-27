@@ -18,7 +18,7 @@ After completing these steps you will have created...
    
 <br>![](/exercises/ex2/images/dt260_ex2_2_fiori_display_evaluations.png)
 
-## Exercise 2.2 Sub Exercise 2 Description
+## Exercise 2.2 Add the functionality to enter a flight rating for a customer
 
 After completing these steps you will have...
 
@@ -26,7 +26,7 @@ After completing these steps you will have...
 
 <br>![](/exercises/ex2/images/dt260_ex2_3_add_unmanaged_save.png)
 
-2.	Now we want to become able in our SAP Fiori application to enter a flight evaluation for a customer and save it in the flight evaluation table. For this add the following code to the **save_modified** method of your  Behavior Implementation class **`ZBP_FLEVAL_EX_##`**.
+2.	Now we want to become able in our SAP Fiori application to enter a flight evaluation for a customer and save it in the flight evaluation table. For this add the following code to the **save_modified** method of your  Behavior Implementation class **`ZBP_FLEVAL_EX_##`**, save and activate it.
    
 ```abap
 
@@ -50,12 +50,13 @@ After completing these steps you will have...
         eval_obj->save_on_db( ).
       ENDLOOP.
     ELSEIF delete IS NOT INITIAL.
-
+    ELSE. 
     ENDIF.
 
 ```
-
-## Exercise 2.3 Sub Exercise 2 Description
+3. Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you you enter flight evaluation data for a customer and it will be stored in the database table **`ZFLEVAL_EX_00`.
+   
+## Exercise 2.3 Add the functionality to persist new flight evaluation data 
 
 After completing these steps you will have...
 
@@ -65,6 +66,15 @@ After completing these steps you will have...
 2.	Click here.
 <br>![](/exercises/ex2/images/02_02_0010.png)
 
+## Exercise 2.4 Sub Exercise 2 Description
+
+After completing these steps you will have...
+
+1.	Enter this code.
+
+
+2.	Click here.
+<br>![](/exercises/ex2/images/02_02_0010.png)
 ## Summary
 
 You've now ...
