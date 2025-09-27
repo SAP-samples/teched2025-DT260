@@ -106,6 +106,8 @@ Use the **lcl_buffer** class in the **save_modified** method by adding this code
 ```
 <br>![](/exercises/ex2/images/dt260_ex2_44_use_lcl_buffer.png)
 
+Save and activate the Behavior Implementation **`ZBP_FLEVAL_EX_##`**.
+
 ## Exercise 2.4 Sub Exercise 2 Description
 
 After completing these steps you will have...
