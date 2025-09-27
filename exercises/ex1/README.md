@@ -169,5 +169,6 @@ as a new package on the wizard. Clicking the **Next** button will complete the p
 ## Summary
 
 You've now got to know the SAPGUI-based Flight Evaluation application, analyzed its application logic for ABAP Cloud readiness, adapted the related development artifacts to the ABAP Cloud, created your own custom CDS view for missing SAP released CDS view for ABAP Cloud and moved ABAP Cloud artifacts to the ABAP Cloud development package.
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+Continue to - [Exercise 2 - Create SAP Fiori application with ABAP Cloud and RAP for Flight Evaluation
+](../ex2/README.md)
 
