@@ -54,7 +54,7 @@ After completing these steps you will have...
     ENDIF.
 
 ```
-3. Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you you enter flight evaluation data for a customer and it will be stored in the database table **`ZFLEVAL_EX_00`**.
+3. Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you can enter flight evaluation data for a customer and it will be stored in the database table **`ZFLEVAL_EX_00`**.
    
 ## Exercise 2.3 Add the functionality to persist new flight evaluation data 
 
@@ -107,6 +107,10 @@ Use the **lcl_buffer** class in the **save_modified** method by adding this code
 <br>![](/exercises/ex2/images/dt260_ex2_44_use_lcl_buffer.png)
 
 Save and activate the Behavior Implementation **`ZBP_FLEVAL_EX_##`**.
+
+6. Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you can fill the flight evaluation table with additional  flight evaluations from the SBOOK table. Just follow the steps on the screenshots below.
+   
+<br>![](/exercises/ex2/images/dt260_ex2_5_fiori_create_evaldata_button.png)
 
 ## Exercise 2.4 Sub Exercise 2 Description
 
