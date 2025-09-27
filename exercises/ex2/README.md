@@ -1,4 +1,4 @@
-# Exercise 2 - Create SAP Fiori ABAP RAP application for Flight Evaluation
+# Exercise 2 - Create SAP Fiori application with ABAP Cloud and RAP for Flight Evaluation
 
 In this exercise, we will create...
 
