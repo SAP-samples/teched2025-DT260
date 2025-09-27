@@ -14,9 +14,6 @@ After completing these steps you will have created...
 
 <br>![](/exercises/ex2/images/dt260_ex2_11_publsh_odata_service.png)
    
-```abap
-response->set_text( |Hello ABAP World! | ). 
-```
 3. The generated SAP Fiori Flight Evaluations application starts. Click on the **Go** button to see the flight evaluations. Currently only the ??? evaluations can be displayed, you cannot add flight evaluations for different airlines en masse, and if you click on the table row to edit a flight evaluation for the customer, then your changes will not be stored in the flight evaluations table.
    
 <br>![](/exercises/ex2/images/dt260_ex2_2_fiori_display_evaluations.png)
@@ -29,8 +26,34 @@ After completing these steps you will have...
 
 <br>![](/exercises/ex2/images/dt260_ex2_3_add_unmanaged_save.png)
 
-2.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
+2.	Now we want to become able in our SAP Fiori application to enter a flight evaluation for a customer and save it in the flight evaluation table. For this add the following code to the **save_modified** method of your  Behavior Implementation class **`ZBP_FLEVAL_EX_##`**.
+   
+```abap
+
+    IF create IS NOT INITIAL.
+
+    ELSEIF update IS NOT INITIAL.
+      LOOP AT update-flighteval INTO DATA(ls_update).
+        DATA eval_obj TYPE REF TO zcl_flight_evaluation_ex_00.
+        eval_obj = NEW zcl_flight_evaluation_ex_00(
+            i_carrid = ls_update-CarrID
+            i_connid = ls_update-ConnID
+            i_fldate = ls_update-Fldate
+            i_bookid = ls_update-BookID
+        ).
+        eval_obj->set_customer_id( ls_update-CustomID ).
+        eval_obj->set_customer_name( ls_update-Name ).
+        eval_obj->set_flight_rating( ls_update-FlightRating ).
+        eval_obj->set_meal_rating( ls_update-MealRating ).
+        eval_obj->set_service_rating( ls_update-ServiceRating ).
+
+        eval_obj->save_on_db( ).
+      ENDLOOP.
+    ELSEIF delete IS NOT INITIAL.
+
+    ENDIF.
+
+```
 
 ## Exercise 2.3 Sub Exercise 2 Description
 
