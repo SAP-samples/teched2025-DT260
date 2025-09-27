@@ -54,16 +54,21 @@ After completing these steps you will have...
     ENDIF.
 
 ```
-3. Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you you enter flight evaluation data for a customer and it will be stored in the database table **`ZFLEVAL_EX_00`.
+3. Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you you enter flight evaluation data for a customer and it will be stored in the database table **`ZFLEVAL_EX_00`**.
    
 ## Exercise 2.3 Add the functionality to persist new flight evaluation data 
 
 After completing these steps you will have...
 
-1.	Enter this code.
+1.	Add the following code to your Behavior Definition **`ZR_FLEVAL_EX_##`** save and activate.
+   ```abap
+  static action createFlightEval parameter ZDT260_A_FLIGTHEVAL_5;
+   ```
+2. You will get the syntax error telling that the method **createFlightEval** must be added for the action. Use quick fix (Ctrl +1) to generate the method in the local class of the correspondng Behavior Implementation **`ZBP_FLEVAL_EX_##`**. After this
 
+   <br>![](/exercises/ex2/images/dt260_ex2_4_add_static_action.png)
 
-2.	Click here.
+3.	Click here.
 <br>![](/exercises/ex2/images/02_02_0010.png)
 
 ## Exercise 2.4 Sub Exercise 2 Description
