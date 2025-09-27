@@ -112,15 +112,69 @@ Save and activate the Behavior Implementation **`ZBP_FLEVAL_EX_##`**.
    
 <br>![](/exercises/ex2/images/dt260_ex2_5_fiori_create_evaldata_button.png)
 
-## Exercise 2.4 Sub Exercise 2 Description
+## Exercise 2.4 Add visualisation with asterisks for customer ratings.
 
 After completing these steps you will have...
 
-1.	Enter this code.
+1.	Open the Metadata Extension **`ZC_FLEVAL_EX_##`** and add replace the source code after the **Name;** for meal, flight and service ratings with the following code:
+   
+```abap
+    @UI.lineItem: [ {
+    position: 70 ,
+    importance: #MEDIUM,
+    label: 'Meal Rating'
+    ,type: #AS_DATAPOINT
+  } ]
+  @UI.identification: [ {
+    position: 70 ,
+    label: 'Meal Rating'
+    ,type: #AS_DATAPOINT
+  } ]
+  @UI: { dataPoint: { title: 'Meal Rating', targetValue: 5, visualization: #RATING }}
+  MealRating;
 
+  @UI.lineItem: [ {
+    position: 80 ,
+    importance: #MEDIUM,
+    label: 'Flight Rating'
+    ,type: #AS_DATAPOINT
+  } ]
+  @UI.identification: [ {
+    position: 80 ,
+    label: 'Flight Rating'
+    ,type: #AS_DATAPOINT
+  } ]
+  @UI: { dataPoint: { title: 'Flight Rating', targetValue: 5, visualization: #RATING }}
+  FlightRating;
 
-2.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
+  @UI.lineItem: [ {
+    position: 90 ,
+    importance: #MEDIUM,
+    label: 'Service Rating'
+    ,type: #AS_DATAPOINT
+  } ]
+  @UI.identification: [ {
+    position: 90 ,
+    label: 'Service Rating'
+    ,type: #AS_DATAPOINT
+  } ]
+  @UI: { dataPoint: { title: 'Service Rating', targetValue: 5, visualization: #RATING }}
+  ServiceRating;
+```
+Save and activate the Metadata Extension **`ZC_FLEVAL_EX_##`**.
+
+2.	Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you see the asterisks for the meal, flight and service ratings.
+   
+<br>![](/exercises/ex2/images/dt260_ex2_6_fiori_asterisks.png)
+
+4. Follow the steps on the screenshots below to edit a flight evaluation for a selected customer.
+
+<br>![](/exercises/ex2/images/dt260_ex2_7_edit_eval.png)
+
+5. Add the ratings for the selected customer and save them in the table.
+   
+<br>![](/exercises/ex2/images/dt260_ex2_8_add_eval.png)
+
 ## Summary
 
 You've now ...
