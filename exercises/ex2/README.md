@@ -6,15 +6,20 @@ In this exercise, we will build the modern SAP Fiori application with ABAP Cloud
 
 After completing these steps you will have created...
 
-1. Click here.
-<br>![](/exercises/ex2/images/02_01_0010.png)
+1. Generate SAP Fiori application on top of the flight evaluations table **`ZFLEVAL_EX_##`** by creating OData UI service. Follow the generator wizard steps on the screenshots below and enter the alias name **FlightEval** for the CDS data definition. Finally open the service binding as prompted in the last popup screen.
+   
+<br>![](/exercises/ex2/images/dt260_ex2_1_create_odata_service.png)
 
-2.	Insert this line of code.
+2.	Click on the **Publish** button, select the **FlightEval** and click on the **Preview...**.
+
+<br>![](/exercises/ex2/images/dt260_ex2_11_publsh_odata_service.png)
+   
 ```abap
 response->set_text( |Hello ABAP World! | ). 
 ```
-
-
+3. The generated SAP Fiori Flight Evaluations application starts. Click on the **Go** button to see the flight evaluations. Currently only the ??? evaluations can be displayed, you cannot add flight evaluations for different airlines en masse, and if you click on the table row to edit a flight evaluation for the customer, then your changes will not be stored in the flight evaluations table.
+   
+<br>![](/exercises/ex2/images/dt260_ex2_2_fiori_display_evaluations.png)
 
 ## Exercise 2.2 Sub Exercise 2 Description
 
