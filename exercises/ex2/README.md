@@ -64,12 +64,22 @@ After completing these steps you will have...
    ```abap
   static action createFlightEval parameter ZDT260_A_FLIGTHEVAL_5;
    ```
-2. You will get the syntax error telling that the method **createFlightEval** must be added for the action. Use quick fix (Ctrl +1) to generate the method in the local class of the correspondng Behavior Implementation **`ZBP_FLEVAL_EX_##`**. After this
+2. You will get the syntax error telling that the method **createFlightEval** must be added for the action. Use quick fix (Ctrl +1) to generate the method in the local class of the correspondng Behavior Implementation **`ZBP_FLEVAL_EX_##`**. 
 
    <br>![](/exercises/ex2/images/dt260_ex2_4_add_static_action.png)
 
-3.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
+3.	Now use the action by adding the following code to the Behavior Definition **`ZC_FLEVAL_EX_##`**.
+  ```abap
+  use action createFlightEval;
+   ```
+<br>![](/exercises/ex2/images/dt260_ex2_41_use_static_action.png)
+
+4.	Finally to see the **createFlightEval** button on the UI you need to add the following code to the Metadata Extension **`ZC_FLEVAL_EX_##`**.
+  ```abap
+   ,{ type: #FOR_ACTION, dataAction: 'createFlightEval', label: 'Create Flight Eval Data' } 
+   ```
+<br>![](/exercises/ex2/images/dt260_ex2_42_use_static_action_mde.png)
+
 
 ## Exercise 2.4 Sub Exercise 2 Description
 
