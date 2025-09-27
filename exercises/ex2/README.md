@@ -74,12 +74,37 @@ After completing these steps you will have...
    ```
 <br>![](/exercises/ex2/images/dt260_ex2_41_use_static_action.png)
 
-4.	Finally to see the **createFlightEval** button on the UI you need to add the following code to the Metadata Extension **`ZC_FLEVAL_EX_##`**.
+4.	To see the **createFlightEval** button on the UI you need to add the following code to the Metadata Extension **`ZC_FLEVAL_EX_##`**.
   ```abap
    ,{ type: #FOR_ACTION, dataAction: 'createFlightEval', label: 'Create Flight Eval Data' } 
    ```
 <br>![](/exercises/ex2/images/dt260_ex2_42_use_static_action_mde.png)
 
+5. Finally add the logic to enter flight evaluation data. Go to the local types of the Behavior Implementation **`ZBP_FLEVAL_EX_##`** and add the local class **lcl_buffer**.
+   
+   ```abap
+     CLASS lcl_buffer DEFINITION.
+     PUBLIC SECTION.
+       TYPES: BEGIN OF gty_buffer,
+                carrid TYPE z_carrid,
+                connid TYPE z_connid,
+                fldate TYPE d,
+              END OF gty_buffer.
+       TYPES gtt_buffer TYPE TABLE OF gty_buffer WITH EMPTY KEY.
+   
+       CLASS-DATA buffer TYPE STANDARD TABLE OF gty_buffer WITH EMPTY KEY.
+      ENDCLASS.
+   ```
+Use the **lcl_buffer** class in the **save_modified** method by adding this code to the **ELSE** clause.
+```abap
+   LOOP AT lcl_buffer=>buffer INTO DATA(buffer).
+     DATA(lt_evaluation_data) =
+         zcl_flight_evaluation_ex_00=>create_flight_evaluation( i_carrid = buffer-carrid
+                                                                i_connid = buffer-connid
+                                                                i_fldate = buffer-fldate ).
+   ENDLOOP.
+```
+<br>![](/exercises/ex2/images/dt260_ex2_44_use_lcl_buffer.png)
 
 ## Exercise 2.4 Sub Exercise 2 Description
 
