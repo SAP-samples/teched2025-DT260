@@ -1,4 +1,4 @@
-# Exercise 2 - Exercise 2 Description
+# Exercise 2 - Create SAP Fiori ABAP RAP application for Flight Evaluation
 
 In this exercise, we will create...
 
