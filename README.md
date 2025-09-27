@@ -19,7 +19,7 @@ The requirements to follow the exercises in this repository are the ABAP develop
     - [Exercise 1.1 - Get to know the Flight Evaluation application and analyze it for ABAP Cloud with ABAP test cockpit (ATC)](exercises/ex1#exercise-11-get-to-know-the-flight-evaluation-application-and-analyze-it-for-abap-cloud-with-abap-test-cockpit-atc)
     - [Exercise 1.2 - Transform the application logic to the ABAP Cloud](exercises/ex1#exercise-12-transform-the-application-logic-to-the-abap-cloud)
     - [Exercise 1.3 - Move the ABAP Cloud ready development objects to the ABAP Cloud development package](exercises/ex1#exercise-13-move-the-abap-cloud-ready-development-objects-to-the-abap-cloud-development-package)
-- [Exercise 2 - Create modern SAP Fiori- and RAP-based Flight Evaluation application](exercises/ex2/)
+- [Exercise 2 - Create SAP Fiori application with ABAP Cloud and RAP for Flight Evaluation](exercises/ex2/)
     - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
     - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
 - [Exercise 3 - Analyze the Customer Dashboard application for clean core](exercises/ex3/)
