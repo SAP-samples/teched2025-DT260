@@ -22,11 +22,11 @@ After completing these steps you will have created the modern SAP Fiori RAP-base
 
 After completing these steps you will have...
 
-1.	Open the Behavior Definition **`ZBP_FLEVAL_EX_##`** and add the source code line **with unmanaged save** to let you manage the persistency table with flight evaluations (not the RAP framework). You will get the error message, telling that it is not possible to specify the persistent table and use unmanaged scenario at the same time. Follow the steps on the screenshots below to comment out the **persistent table**-statement and apply the quick fixes (Ctrl +1 shotcut) to generate the required **save_modified** method and authorization method in the corresponding Behavior Implementation class **`ZBP_FLEVAL_EX_##`**.
+1.	Open the Behavior Definition **`ZR_FLEVAL_EX_##`** and add the source code line **with unmanaged save** to let you ((not the RAP framework) manage the table **`ZFLEVAL_EX_##`** with flight evaluations. You will get the error message, telling that it is not possible to specify the persistent table and use unmanaged scenario at the same time. Follow the steps on the screenshots below to comment out the **persistent table**-statement and apply the quick fixes (Ctrl +1 shotcut) to generate the required **save_modified** method and authorization method in the corresponding Behavior Implementation class **`ZR_FLEVAL_EX_##`**.
 
 <br>![](/exercises/ex2/images/dt260_ex2_3_add_unmanaged_save.png)
 
-2.	Now we want to become able in our SAP Fiori application to enter a flight evaluation for a customer and save it in the flight evaluation table. For this add the following code to the **save_modified** method of your  Behavior Implementation class **`ZBP_FLEVAL_EX_##`**, save and activate it.
+2.	Now add the fnctionality to being able to enter a flight evaluation for a customer and save it in the **`ZR_FLEVAL_EX_##`** flight evaluation table. For this add the following code to the **save_modified** method of your  Behavior Implementation class **`ZR_FLEVAL_EX_##`**, save and activate it.
    
 ```abap
 
