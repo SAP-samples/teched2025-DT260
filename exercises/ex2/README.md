@@ -177,6 +177,6 @@ Save and activate the Metadata Extension **`ZC_FLEVAL_EX_##`**.
 
 ## Summary
 
-You've now ...
+You've now built modern SAP Fiori Flight Evaluation application reusing the logic from the SAPGUI based Flight Evaluation application transformed to ABAP Cloud. You can display flight evaluations, create new flight evaluations and edit customer ratings for the meal, flight and service.
 
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
+Go to start - [DT260 - Modernize classic extensions to clean core in Cloud ERP Private ](../../README.md)
