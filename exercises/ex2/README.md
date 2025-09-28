@@ -4,7 +4,7 @@ In this exercise, we will build the modern SAP Fiori application with ABAP Cloud
 
 ## Exercise 2.1 Generate SAP Fiori RAP application for Flight Evaluation
 
-After completing these steps you will have created...
+After completing these steps you will have created the modern SAP Fiori RAP-based Flight Evaluation application.
 
 1. Generate SAP Fiori application on top of the flight evaluations table **`ZFLEVAL_EX_##`** by creating OData UI service. Follow the generator wizard steps on the screenshots below and enter the alias name **FlightEval** for the CDS data definition. Finally open the service binding as prompted in the last popup screen.
    
