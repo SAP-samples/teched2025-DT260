@@ -14,7 +14,7 @@ After completing these steps you will have created the modern SAP Fiori RAP-base
 
 <br>![](/exercises/ex2/images/dt260_ex2_11_publsh_odata_service.png)
    
-3. The generated SAP Fiori Flight Evaluations application starts. Click on the **Go** button to see the flight evaluations. Currently only the ??? evaluations can be displayed, you cannot add flight evaluations for different airlines en masse, and if you click on the table row to edit a flight evaluation for the customer, then your changes will not be stored in the flight evaluations table.
+3. The generated SAP Fiori Flight Evaluations application starts. Click on the **Go** button to see the flight evaluations. Currently only the ??? evaluations can be displayed, you cannot add flight evaluations for different airlines en masse, and if you click on the table row to edit a flight evaluation for the customer, then your changes will not be stored in your flight evaluations table **`ZFLEVAL_EX_##`**.
    
 <br>![](/exercises/ex2/images/dt260_ex2_2_fiori_display_evaluations.png)
 
