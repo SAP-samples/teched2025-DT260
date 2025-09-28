@@ -64,7 +64,7 @@ After completing these steps, the SAP Fiori Flight Evaluation application will b
    ```abap
   static action createFlightEval parameter ZDT260_A_FLIGTHEVAL_5;
    ```
-2. You will get the syntax error telling that the method **createFlightEval** must be added for the action. Use quick fix (Ctrl +1) to generate the method in the local class of the correspondng Behavior Implementation class **`ZBP_FLEVAL_EX_##`**. 
+2. You will get the syntax error telling that the method **createFlightEval** must be added for the action. Use quick fix (Ctrl +1 shortcut) to generate the method in the local handler class of the correspondng Behavior Implementation class **`ZBP_FLEVAL_EX_##`**. 
 
    <br>![](/exercises/ex2/images/dt260_ex2_4_add_static_action.png)
 
@@ -80,7 +80,7 @@ After completing these steps, the SAP Fiori Flight Evaluation application will b
    ```
 <br>![](/exercises/ex2/images/dt260_ex2_42_use_static_action_mde.png)
 
-5. Finally add the logic to enter flight evaluation data. Go to the local types of the Behavior Implementation **`ZBP_FLEVAL_EX_##`** and add the local class **lcl_buffer**.
+5. Add the logic to enter the flight evaluation data by adding the local handler class **lcl_buffer** to the Behavior Implementation class **`ZBP_FLEVAL_EX_##`**.
    
    ```abap
      CLASS lcl_buffer DEFINITION.
@@ -95,7 +95,7 @@ After completing these steps, the SAP Fiori Flight Evaluation application will b
        CLASS-DATA buffer TYPE STANDARD TABLE OF gty_buffer WITH EMPTY KEY.
       ENDCLASS.
    ```
-Use the **lcl_buffer** class in the **save_modified** method by adding this code to the **ELSE** clause.
+6. Finallty use the **lcl_buffer** class in the **save_modified** method by adding this code to the **ELSE** clause.
 ```abap
    LOOP AT lcl_buffer=>buffer INTO DATA(buffer).
      DATA(lt_evaluation_data) =
