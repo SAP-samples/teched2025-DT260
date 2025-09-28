@@ -95,7 +95,7 @@ After completing these steps, the SAP Fiori Flight Evaluation application will b
        CLASS-DATA buffer TYPE STANDARD TABLE OF gty_buffer WITH EMPTY KEY.
       ENDCLASS.
    ```
-6. Finallty use the **lcl_buffer** class in the **save_modified** method by adding this code to the **ELSE** clause.
+6. Finallty use the **lcl_buffer** class in the **save_modified** method by adding this code to the **ELSE** clause of the **IF**-statement.
 ```abap
    LOOP AT lcl_buffer=>buffer INTO DATA(buffer).
      DATA(lt_evaluation_data) =
