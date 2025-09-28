@@ -22,11 +22,11 @@ After completing these steps you will have created the modern SAP Fiori RAP-base
 
 After completing these steps you will have...
 
-1.	Open the Behavior Definition **`ZR_FLEVAL_EX_##`** and add the source code line **with unmanaged save** to let you (not the RAP framework) manage the table **`ZFLEVAL_EX_##`** with flight evaluations. You will get the error message, telling that it is not possible to specify the persistent table and use unmanaged scenario at the same time. Follow the steps on the screenshots below to comment out the **persistent table**-statement and apply the quick fixes (Ctrl +1 shortcut) to generate the required **save_modified** method and authorization method in the corresponding Behavior Implementation class **`ZR_FLEVAL_EX_##`**.
+1.	Open the Behavior Definition **`ZR_FLEVAL_EX_##`** and add the source code line **with unmanaged save** to let you (not the RAP framework) manage the table **`ZFLEVAL_EX_##`** with flight evaluations. You will get the error message, telling that it is not possible to specify the persistent table and use unmanaged scenario at the same time. Follow the steps on the screenshots below to comment out the **persistent table**-statement and apply the quick fixes (Ctrl +1 shortcut) to generate the required **save_modified** method and authorization method in the local handler class of the corresponding Behavior Implementation class **`ZBP_FLEVAL_EX_##`**.
 
 <br>![](/exercises/ex2/images/dt260_ex2_3_add_unmanaged_save.png)
 
-2.	Now add the fnctionality to being able to enter a flight evaluation for a customer and save it in the **`ZR_FLEVAL_EX_##`** flight evaluation table. For this add the following code to the **save_modified** method of your  Behavior Implementation class **`ZR_FLEVAL_EX_##`**, save and activate it.
+2.	Now add the fnctionality for being able to enter a flight rating for a customer and save it in the **`ZFLEVAL_EX_##`** flight evaluation table. For this add the following code to the **save_modified** method of the local handler class of your  Behavior Implementation class **`ZBP_FLEVAL_EX_##`**, save and activate it.
    
 ```abap
 
@@ -54,7 +54,7 @@ After completing these steps you will have...
     ENDIF.
 
 ```
-3. Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you can enter flight evaluation data for a customer and it will be stored in the database table **`ZFLEVAL_EX_00`**.
+3. Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you can enter flight evaluation data for a customer and it will be stored in your flight evaluation table **`ZFLEVAL_EX_00`**.
    
 ## Exercise 2.3 Add the functionality to persist new flight evaluation data 
 
