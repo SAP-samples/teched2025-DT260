@@ -58,7 +58,7 @@ After completing these steps, the SAP Fiori Flight Evaluation application will b
    
 ## Exercise 2.3 Add the functionality to add new flight evaluation data 
 
-After completing these steps, the SAP Fiori Flight Evaluation application will be able to create new flight evalations. For this the new button "Create Flight Eval Data" will be added to the UI.
+After completing these steps, the SAP Fiori Flight Evaluation application will be able to create new flight evalations. For this the new button **Create Flight Eval Data** will be added to the UI.
 
 1.	Add the following code to your Behavior Definition **`ZR_FLEVAL_EX_##`** save and activate.
    ```abap
@@ -74,7 +74,7 @@ After completing these steps, the SAP Fiori Flight Evaluation application will b
    ```
 <br>![](/exercises/ex2/images/dt260_ex2_41_use_static_action.png)
 
-4.	To see the **createFlightEval** button on the UI you need to add the following code to the Metadata Extension **`ZC_FLEVAL_EX_##`**.
+4.	To see the **Create Flight Eval Data** button on the UI you need to add the following code to the Metadata Extension **`ZC_FLEVAL_EX_##`**.
   ```abap
    ,{ type: #FOR_ACTION, dataAction: 'createFlightEval', label: 'Create Flight Eval Data' } 
    ```
