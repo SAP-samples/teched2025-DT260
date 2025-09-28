@@ -1,6 +1,6 @@
 # Exercise 2 - Create SAP Fiori application with ABAP Cloud and RAP for Flight Evaluation
 
-In this exercise, we will build the modern SAP Fiori application with ABAP Cloud using RAP unmanaged scenario on top of the transformed to ABAP Cloud application logic of the Flight Evaluation application. The RAP unmanaged scenario is perfectly suited for migration scenarios from classic ABAP since it gives you more control over the data persistence and business logic compared to the RAP managed approach, where the RAP frameworks handles everything.
+In this exercise, we will build the modern SAP Fiori application with ABAP Cloud using RAP unmanaged scenario on top of the Flight Evaluation application logic, transformed to ABAP Cloud in the Exercise 1. The RAP unmanaged scenario is perfectly suited for migration use cases from classic ABAP since it gives you more control over the data persistence and business logic compared to the RAP managed approach, where the RAP framework handles everything.
 
 ## Exercise 2.1 Generate SAP Fiori RAP application for Flight Evaluation
 
