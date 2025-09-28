@@ -10,7 +10,7 @@ After completing these steps you will have created the modern SAP Fiori RAP-base
    
 <br>![](/exercises/ex2/images/dt260_ex2_1_create_odata_service.png)
 
-2.	Click on the **Publish** button, select the **FlightEval** and click on the **Preview...**.
+2.	Click on the **Publish** button, activate the Service Binding **`ZUI_FLEVAL_EX_##_O4`**, select the **FlightEval** and click on the **Preview...**.
 
 <br>![](/exercises/ex2/images/dt260_ex2_11_publsh_odata_service.png)
    
