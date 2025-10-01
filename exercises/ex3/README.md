@@ -11,7 +11,7 @@ After completing these steps you will have understood how the Customer Dashboard
    
    <br>![](/exercises/ex3/images/dt260_ex3_1_start_abap_program.png)
    
-2. Analyze the Customer Dashboard application for ABAP Cloud. Select the ABAP program  **`ZCUSTOMER_DASHBOARD`** in the project explorer and use the context menu **Run As->ABAP Test Cockpit With...** with the **ABAP_CLOUD_READINESS** check variant to execute ABAP Cloud readiness checks. You will get 15 issues. Take a look at them in detail and try to understand. Some examples are provided on the screenshots below. These ATC issues occur because of the usage of SAP object types like programs (PROG), or ABAP language constructs (REPORT), or not released SAP APIs and frameworks like ALV Grid (CL_SALV_TABLE) which are nor supported in ABAP Cloud.  
+2. Analyze the Customer Dashboard application for ABAP Cloud. Select the ABAP program  **`ZCUSTOMER_DASHBOARD`** in the project explorer and use the context menu **Run As->ABAP Test Cockpit With...** with the **ABAP_CLOUD_READINESS** check variant to execute ABAP Cloud readiness checks. You will get 16 errors. Take a look at them in detail and try to understand. Some examples are provided on the screenshots below. These ATC errors occur because of the usage of SAP object types like programs (PROG), or ABAP language constructs (REPORT), or not released SAP APIs and frameworks like ALV Grid (CL_SALV_TABLE) which are not supported in ABAP Cloud.  
  
    <br>![](/exercises/ex3/images/dt260_ex3_2_analyze_atc_cloud_issues.png)
    
@@ -25,7 +25,7 @@ After completing these steps you will have learned how to execute clean core ATC
    
      <br>![](/exercises/ex3/images/dt260_ex3_4_run_atc_clean_core.png)
    
-   You will get now musch less ATC issues: just 1 error, 2 warnings and 3 information messages:
+   You will get now musch less ATC issues: just 2 errors, 2 warnings and 3 information messages:
 
    <br>![](/exercises/ex3/images/dt260_ex3_5_atc_clean_core_issues.png) 
    
