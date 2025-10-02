@@ -132,7 +132,7 @@ After completing these steps you will have adopted the application logic of the 
 
    <br>![](/exercises/ex1/images/dt260_ex1_13_replace_cds.png)
 
-8. Run the Flight Evaluation application again to verify that it works exactly as before by executing the ABAP program  **`ZFLIGHT_EVALUATION_EX_##`** (**F8** shortcut) and repeating the steps 1-2 from the **Exercise 1.1**.
+8. Run the Flight Evaluation application again to verify that it works exactly as before by repeating the steps 1-2 from the **Exercise 1.1**.
 
 ## Exercise 1.3 Move the ABAP Cloud ready development objects to the ABAP Cloud development package
 
