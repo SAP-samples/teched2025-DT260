@@ -69,7 +69,7 @@ After completing these steps you will have adopted the application logic of the 
    
    <br>![](/exercises/ex1/images/dt260_ex1_11_atc_tables_issues.png)
 
-6. Create your own CDS view **`ZDT260_C_SBOOK_EX_##`** by proceeding as follows. Go to your ABAP package **`ZDT260_EX_##`** in the Project Explorer and using the context menu select **New->Other ABAP Repository Object->Core Data Services**, choose **Data Definition** and click the **Next** button. Enter the **Name** **`ZDT260_C_SBOOK_EX_##`** and any **Description**. Click further **Next** button and choose **defineViewEntity** from the CDS Data Definition templates. Click the **Finish** button.
+6. Create your own CDS view **`ZDT260_C_SBOOK_EX_##`** by proceeding as follows. Go to your ABAP package **`ZDT260_EX_##`** in the Project Explorer and using the context menu select **New->Other ABAP Repository Object->Core Data Services**, choose **Data Definition** and click on the **Next** button. Enter the **Name** **`ZDT260_C_SBOOK_EX_##`** and any **Description**. Click further on the **Next** button and choose **defineViewEntity** from the CDS Data Definition templates. Click on the **Finish** button.
 
    <br>![](/exercises/ex1/images/dt260_ex1_12_create_cds_view.png)
 
