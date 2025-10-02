@@ -65,7 +65,7 @@ After completing these steps you will have adopted the application logic of the 
    
    <br>![](/exercises/ex1/images/dt260_ex1_10_atc_date_issue_fixed.png)
 
-5. By doublie-clicking on remaining ATC issues and displaying them in the **Details** view you will see, that they are caused by direct accesses in the code to the SAP standard tables **SBOOK** (booking table) and **SCUSTOM** (customers table) in the **SELECT**-statement which combines both tables using JOIN-clause to get the data for the customers evaluations table.  ABAP Cloud developemnt rules prescribe that all SAP standard tables must be accessed not directly but by using the SAP released CDS views. But there is no SAP relased CDS view provided as a successor in this error result. Therefore you need to create your own CDS view.
+5. By doublie-clicking on remaining ATC issues and displaying them in the **Details** view you will see, that they are caused by direct accesses in the code to the SAP standard tables **SBOOK** (booking table) and **SCUSTOM** (customers table) in the **SELECT**-statement which combines both tables using JOIN-clause to get the data for the customers evaluations table.  ABAP Cloud development rules prescribe that all SAP standard tables must be accessed not directly but by using the SAP released CDS views. But there is no SAP relased CDS view provided as a successor in the details of this error. Therefore you need to create your own CDS view.
    
    <br>![](/exercises/ex1/images/dt260_ex1_11_atc_tables_issues.png)
 
