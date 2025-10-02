@@ -108,7 +108,7 @@ After completing these steps, you will be able to create new flight evalations i
 
 Save and activate the Behavior Implementation **`ZBP_FLEVAL_EX_##`**.
 
-6. Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you can fill the flight evaluation table with additional  flight evaluations from the SBOOK table. Just follow the steps on the screenshots below.
+6. Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you can fill the flight evaluations table with additional flight evaluations from the SAP standard SBOOK table. Just follow the steps on the screenshots below.
    
 <br>![](/exercises/ex2/images/dt260_ex2_5_fiori_create_evaldata_button.png)
 
