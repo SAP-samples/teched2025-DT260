@@ -160,7 +160,7 @@ as a new package on the wizard. Clicking on the **Next** button will complete th
 
    <br>![](/exercises/ex1/images/dt260_ex1_14_activate_syntax_errors.png)
    
-6. Go to your CDS view **`ZDT260_C_SBOOK_EX_##`** in the Project Explorer and use the context menu **API State -> Add Use System-Internally (Contract C1)...** . Follow the wizard by clicking on the **Next** button and **Finish** to release the CDS view for use in ABAP Cloud development internally in this development system.
+6. Go to your CDS view **`ZDT260_C_SBOOK_EX_##`** in the Project Explorer and use the context menu **API State -> Add Use System-Internally (Contract C1)...** . Follow the wizard by clicking on the **Next** and **Finish** buttons to release the CDS view for use in ABAP Cloud development internally in this development system.
 
    <br>![](/exercises/ex1/images/dt260_ex1_13_release_cds.png)
    
