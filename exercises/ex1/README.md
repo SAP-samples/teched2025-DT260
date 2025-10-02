@@ -128,11 +128,11 @@ After completing these steps you will have adopted the application logic of the 
            INTO CORRESPONDING FIELDS OF TABLE @it_eval.
    ```
 
-   Save and activate your class and execute **Recheck** on your ATC result list. You will see, that all your ATC findings were resolved and the ATC result list is now empty.
+   Save and activate your class and recheck your ATC result (context menu **Recheck**). You will see, that all your ATC findings were resolved and the ATC result list is now empty.
 
    <br>![](/exercises/ex1/images/dt260_ex1_13_replace_cds.png)
 
-8. Run the Flight Evaluation application again to verify that it works exactly as before by executing the ABAP program  **`ZFLIGHT_EVALUATION_EX_##`** and repeating the steps 1-2 from the **Exercise 1.1**.
+8. Run the Flight Evaluation application again to verify that it works exactly as before by executing the ABAP program  **`ZFLIGHT_EVALUATION_EX_##`** (**F8** shortcut) and repeating the steps 1-2 from the **Exercise 1.1**.
 
 ## Exercise 1.3 Move the ABAP Cloud ready development objects to the ABAP Cloud development package
 
