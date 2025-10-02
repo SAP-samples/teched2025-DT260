@@ -138,7 +138,7 @@ After completing these steps you will have adopted the application logic of the 
 
 After completing these steps you will have moved your ABAP Cloud ready development objects to your ABAP Cloud development package **`ZDT260_EX_##_5`**. 
    
-1. Before you move your ABAP Cloud ready artifacts to your ABAP Cloud development package, you need to switch their language version to *ABAP for Cloud Development*. For this open the **Properties** view (menu **Window->Show View->Properties**). Display the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** subsequently in the **Properties** view (context menu in the Project Explorer **Show In -> Properties**) and on the ***General*** tab switch the language version using the **Edit..** button to *ABAP for Cloud Development*. Save and activate the class and the table.
+1. Before you move your ABAP Cloud ready development artifacts to your ABAP Cloud development package, you need to switch their language version to *ABAP for Cloud Development*. For this open the **Properties** view (menu **Window->Show View->Properties**). Display the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** subsequently in the **Properties** view (context menu in the Project Explorer **Show In -> Properties**) and on the ***General*** tab switch the language version using the **Edit..** button to *ABAP for Cloud Development*. Save and activate the class and the table.
 
    <br>![](/exercises/ex1/images/dt260_ex1_14_switch_lgv_5.png)
 
