@@ -7,11 +7,11 @@ In this exercise, you will analyze the Customer Dashboard application for ABAP C
 
 After completing these steps you will have understood how the Customer Dashboard application works and executed ABAP Cloud readiness checks with ABAP test cockpit (ATC) to get the ATC result list of the incompatible issues with ABAP Cloud.
 
-1. Start the Customer Dashboard application. For this run the ABAP program  **`ZCUSTOMER_DASHBOARD`** by selecting it in the project explorer and clicking **F8** button. The program will be started in ABAP development tools for Eclipse embedded in the SAP GUI. Enter the customer id **27** as proposed on the screenshot and click **Execute** button. The program will display customer data along with the flight information and flight feedback.
+1. Start the Customer Dashboard application. For this run the ABAP program  **`ZCUSTOMER_DASHBOARD`** by selecting it in the project explorer and clicking on the **F8** button. The program will be started in the SAP GUI embedded in the ABAP development tools for Eclipse. Enter the customer id **27** as proposed on the screenshot and click on the **Execute** button. The program will display customer data along with the flight information and flight feedback.
    
    <br>![](/exercises/ex3/images/dt260_ex3_1_start_abap_program.png)
    
-2. Analyze the Customer Dashboard application for ABAP Cloud. Select the ABAP program  **`ZCUSTOMER_DASHBOARD`** in the project explorer and use the context menu **Run As->ABAP Test Cockpit With...** with the **ABAP_CLOUD_READINESS** check variant to execute ABAP Cloud readiness checks. You will get 16 errors. Take a look at them in detail and try to understand. Some examples are provided on the screenshots below. These ATC errors occur because of the usage of SAP object types like programs (PROG), or ABAP language constructs (REPORT), or not released SAP APIs and frameworks like ALV Grid (CL_SALV_TABLE) which are not supported in ABAP Cloud.  
+2. Analyze the Customer Dashboard application for ABAP Cloud. Select the ABAP program  **`ZCUSTOMER_DASHBOARD`** in the Project Explorer and use the context menu **Run As->ABAP Test Cockpit With...** with the **ABAP_CLOUD_READINESS** check variant to execute ABAP Cloud readiness checks. You will get 16 errors. Take a look at them in detail and try to understand. Some examples are provided on the screenshots below. These ATC errors occur because of the usage of SAP object types like programs (PROG), or ABAP language constructs (REPORT), or not released SAP APIs and frameworks like ALV Grid (CL_SALV_TABLE) which are not supported in ABAP Cloud.  
  
    <br>![](/exercises/ex3/images/dt260_ex3_2_analyze_atc_cloud_issues.png)
    
