@@ -54,7 +54,7 @@ After completing these steps, the SAP Fiori Flight Evaluation application will b
     ENDIF.
 
 ```
-3. Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you can enter flight rating data for a customer and flight and it will be stored in your flight evaluation table **`ZFLEVAL_EX_00`**.
+3. Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you can enter flight rating data for a customer and it will be stored in your flight evaluations table **`ZFLEVAL_EX_00`**.
    
 ## Exercise 2.3 Add the functionality to add new flight evaluation data 
 
