@@ -7,7 +7,7 @@ In this exercise, you will analyze the Customer Dashboard application for ABAP C
 
 After completing these steps you will have understood how the Customer Dashboard application works and executed ABAP Cloud readiness checks with ABAP test cockpit (ATC) to get the ATC result list of the incompatible issues with ABAP Cloud.
 
-1. Start the Customer Dashboard application. For this run the ABAP program  **`ZCUSTOMER_DASHBOARD`** by selecting it in the project explorer and clicking on the **F8** button. The program will be started in the SAP GUI embedded in the ABAP development tools for Eclipse. Enter the customer id **27** as proposed on the screenshot and click on the **Execute** button. The program will display customer data along with the flight information and flight feedback.
+1. Start the Customer Dashboard application. For this run the ABAP program  **`ZCUSTOMER_DASHBOARD`** by selecting it in the Project Explorer and clicking on the **F8** button. The program will be started in the SAP GUI embedded in the ABAP development tools for Eclipse. Enter the customer id **27** as proposed on the screenshot and click on the **Execute** button. The program will display customer data along with the flight information and flight feedback.
    
    <br>![](/exercises/ex3/images/dt260_ex3_1_start_abap_program.png)
    
