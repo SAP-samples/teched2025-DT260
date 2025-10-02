@@ -160,7 +160,7 @@ as a new package on the wizard. Clicking on the **Next** button will complete th
 
    <br>![](/exercises/ex1/images/dt260_ex1_14_activate_syntax_errors.png)
    
-6. Go to your CDS view **`ZDT260_C_SBOOK_EX_##`** in the project explorer and click the context menu **API State -> Add Use System-Internally (Contract C1)...** . Follow the wizard by clicking the **Next** btton and **Finish** to release the CDS view for use in ABAP Cloud development internally in this development system.
+6. Go to your CDS view **`ZDT260_C_SBOOK_EX_##`** in the Project Explorer and use the context menu **API State -> Add Use System-Internally (Contract C1)...** . Follow the wizard by clicking on the **Next** button and **Finish** to release the CDS view for use in ABAP Cloud development internally in this development system.
 
    <br>![](/exercises/ex1/images/dt260_ex1_13_release_cds.png)
    
@@ -168,7 +168,7 @@ as a new package on the wizard. Clicking on the **Next** button will complete th
    
 ## Summary
 
-You've now got to know the SAPGUI-based Flight Evaluation application, analyzed its application logic for ABAP Cloud readiness, adapted the related development artifacts to the ABAP Cloud, created your own custom CDS view for missing SAP released CDS view for ABAP Cloud and moved ABAP Cloud artifacts to the ABAP Cloud development package.
+You've now got to know the SAPGUI-based Flight Evaluation application, analyzed its application logic for ABAP Cloud readiness, adapted the related development artifacts to the ABAP Cloud, created your own custom CDS view for missing SAP released CDS view for ABAP Cloud and moved your ABAP Cloud development artifacts to the ABAP Cloud development package.
 Continue to - [Exercise 2 - Create SAP Fiori application with ABAP Cloud and RAP for Flight Evaluation
 ](../ex2/README.md)
 
