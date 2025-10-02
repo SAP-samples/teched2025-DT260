@@ -73,7 +73,7 @@ After completing these steps you will have adopted the application logic of the 
 
    <br>![](/exercises/ex1/images/dt260_ex1_12_create_cds_view.png)
 
-   Replace the source code in the editor window with this code and replace **##** with your group number. Save and activate your CDS view.
+   Replace the source code in the editor window with this code and replace **`##`** with your group number. Save and activate your CDS view.
 
    ```abap
    @AbapCatalog.viewEnhancementCategory: [#NONE]
