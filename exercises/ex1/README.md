@@ -148,11 +148,11 @@ After completing these steps you will have moved your ABAP Cloud ready developme
    <br>![](/exercises/ex1/images/dt260_ex1_17_release_transports.png)
    
 3.	Move the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** to the ABAP Cloud development package **`ZDT260_EX_##_5`** by selecting subsequently the context menu **Change Package Assignment...** and providing **`ZDT260_EX_##_5`**
-as a new package on the wizard. Clicking the **Next** button will complete the package assignement.
+as a new package on the wizard. Clicking on the **Next** button will complete the package assignement.
 
    <br>![](/exercises/ex1/images/dt260_ex1_15_chg_pkg_assign_cloud.png)
 
-4.	As a result your ABAP Cloud ready artifacts the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** are now moved to the ABAP Cloud development package **`ZDT260_EX_##_5`** whereby the ABAP program  **`ZFLIGHT_EVALUATION_EX_##`** and the CDS view **`ZDT260_C_SBOOK_EX_##`** remain in the standard ABAP package **`ZDT260_EX_##`**
+4.	As a result your ABAP Cloud ready ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** are now moved to the ABAP Cloud development package **`ZDT260_EX_##_5`** whereby the ABAP program  **`ZFLIGHT_EVALUATION_EX_##`** and the CDS view **`ZDT260_C_SBOOK_EX_##`** remain in the standard ABAP package **`ZDT260_EX_##`**
 
    <br>![](/exercises/ex1/images/dt260_ex1_16_chg_pkg_assign_cloud_result.png)
 
