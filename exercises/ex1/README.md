@@ -118,7 +118,7 @@ After completing these steps you will have adopted the application logic of the 
          customer.name                                               as Name
    }
    ```
-7.Replace the **SELECT FROM SBOOK**-statement with this code, using your new CDS view, and replace **##** with your group number.
+7.Replace the **SELECT FROM SBOOK**-statement with this code, using your new CDS view, and replace **`##`** with your group number.
 
    ```abap
        SELECT FROM zdt260_c_sbook_ex_## AS booking FIELDS *
