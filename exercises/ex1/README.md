@@ -16,7 +16,7 @@ After completing these steps you will have understood how the Flight Evaluation 
    
    <br>![](/exercises/ex1/images/dt260_ex1_2_enter_data_abap_program.png)
 
-3. Now it's time to analyze the Flight Evaluation application for ABAP Cloud. Since the application logic is implemented in the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** using the table **`ZFLEVAL_EX_##`** you would need only to analyze the class. You will leave the ABAP program **`ZFLIGHT_EVALUATION_EX_##`** as it is, since for the purpose of modernization in the upcoming exercises you will provide the Flight Evaluation application with the new SAP Fiori UI and will not need the ABAP program any longer. Select the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** in the project explorer end use the context menu **Run As->ABAP Test Cockpit With...** with the **ABAP_CLOUD_READINESS** check variant to execute ABAP Cloud readiness checks.
+3. Now it's time to analyze the Flight Evaluation application for ABAP Cloud. Since the application logic is implemented in the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** using the table **`ZFLEVAL_EX_##`** you would need only to analyze the class. You will leave the ABAP program **`ZFLIGHT_EVALUATION_EX_##`** as it is, since for the purpose of modernization in the upcoming exercises you will provide the Flight Evaluation application with the new SAP Fiori UI and will not need the ABAP program any longer. Select the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** in the Project Explorer and use the context menu **Run As->ABAP Test Cockpit With...** with the **ABAP_CLOUD_READINESS** check variant to execute ABAP Cloud readiness checks.
  
    <br>![](/exercises/ex1/images/dt260_ex1_3_run_atc.png)
 
