@@ -67,7 +67,7 @@ After completing these steps you will have learned how the clean core ATC check 
    
 
 ## Summary
-You've now got to know the SAPGUI-based Customer Dashboard application, analyzed it for ABAP Cloud readiness and for clean core using ABAP test cockpit (ATC) and experienced how the ATC errors go down when using the new ATC clean core checks based on usage guidelines for SAP APIs instead of ABAP Cloud readiness checks based on usage of released APIs. You have learned how to work with the Cloudification Repository on the GitHub and look up the classic APIs. Finally you have received the guidance how to fix clean core ATC issues.
+You've now got to know the SAPGUI-based Customer Dashboard application, analyzed it for ABAP Cloud readiness and for clean core using ABAP test cockpit (ATC) and experienced how the ATC errors go down when using the new ATC clean core checks based on usage guidelines for SAP APIs instead of ABAP Cloud readiness checks based on usage of released APIs. You have learned how to work with the Cloudification Repository on the GitHub and look up the classic APIs. Finally you have received the basic guidance how to fix clean core ATC issues.
 
 Go to start - [DT260 - Modernize classic extensions to clean core in Cloud ERP Private ](../../README.md)
 
