@@ -2,11 +2,11 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2025 session called **DT260 - Modernize classic extensions to clean core in Cloud ERP Private.**  
+This repository contains the material for the SAP TechEd 2025 session **DT260 - Modernize classic extensions to clean core in Cloud ERP Private.**  
 
 ## Overview
 
-In this session you will practice a clean core extensibility in SAP S/4HANA Cloud Private Edition. You will learn how to govern clean core development using the ABAP Test Cockpit, and how to use ABAP Cloud and clean core extensibility principles to modernize your custom on-stack extensions.
+In this session you will practice a clean core extensibility in SAP S/4HANA Cloud Private Edition. You will learn how to use ABAP Cloud and clean core extensibility principles to modernize your custom on-stack extensions and how to govern clean core development using the ABAP test cockpit (ATC).
 
 ## Requirements
 
