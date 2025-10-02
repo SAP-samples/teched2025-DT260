@@ -20,7 +20,7 @@ After completing these steps you will have created the modern SAP Fiori RAP-base
 
 ## Exercise 2.2 Add the functionality to enter a flight rating for a customer
 
-After completing these steps, the SAP Fiori Flight Evaluation application will be able to persist customer flight ratings entered by users of the Flight Evaluation application.
+After completing these steps, you will be able to enter and store customer flight ratings in the SAP Fiori Flight Evaluation application.
 
 1.	Open the Behavior Definition **`ZR_FLEVAL_EX_##`** and add the source code line **with unmanaged save** to let you (not the RAP framework) manage the table **`ZFLEVAL_EX_##`** with flight evaluations. You will get the error message, telling that it is not possible to specify the persistent table and use unmanaged scenario at the same time. Follow the steps on the screenshots below to comment out the **persistent table**-statement and apply the quick fixes (**Ctrl + 1** shortcut) to generate the required **save_modified** method in the local handler class of the corresponding Behavior Implementation class **`ZBP_FLEVAL_EX_##`**.
 
@@ -58,7 +58,7 @@ After completing these steps, the SAP Fiori Flight Evaluation application will b
    
 ## Exercise 2.3 Add the functionality to add new flight evaluation data 
 
-After completing these steps, the SAP Fiori Flight Evaluation application will be able to create new flight evalations. For this the new button **Create Flight Eval Data** will be added to the UI.
+After completing these steps, you will be able to create new flight evalations in the SAP Fiori Flight Evaluation application. For this the new button **Create Flight Eval Data** will be added to the UI.
 
 1.	Add the following code to your Behavior Definition **`ZR_FLEVAL_EX_##`** save and activate.
    ```abap
