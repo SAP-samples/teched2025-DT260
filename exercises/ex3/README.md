@@ -15,7 +15,7 @@ After completing these steps you will have understood how the Customer Dashboard
  
    <br>![](/exercises/ex3/images/dt260_ex3_2_analyze_atc_cloud_issues.png)
    
-For the adaptation of the code to ABAP Cloud all these ATC findings must be fixed. But in this exercise the Customer Dashboard application must just become clean core compliant, therefore the ATC check procedure must be changed to clean core.  
+   For the adaptation of the code to ABAP Cloud all these ATC findings must be fixed. But in this exercise the Customer Dashboard application must just become clean core compliant, therefore the ATC check procedure must be changed to clean core.  
 
 ## Exercise 3.2 Analyze Customer Dashboard application for clean core with ABAP test cockpit (ATC) and get to know Cloudification Repository Viewer
 
@@ -29,7 +29,7 @@ After completing these steps you will have learned how to execute clean core ATC
 
    <br>![](/exercises/ex3/images/dt260_ex3_5_atc_clean_core_issues.png) 
    
-Some check results indicate usage of **classic APIs**, **internal APIs** and **APIs that must no be used** in the code. This is because the new clean core check **Usage of APIs** is based on the clean core usage guidelines for SAP APIs. For usage of released SAP APIs no ATC findings are reported, for usage of an SAP classic APIs the check reports an information message, for usage of an API which is not classified (internal API) the check reports a warning and for usage of an API marked as **no API** an error message is reported. You can take a closer look at the documentation of the **Usage of APIs** check in the details of ATC analysis results.
+   Some check results indicate usage of **classic APIs**, **internal APIs** and **APIs that must no be used** in the code. This is because the new clean core check **Usage of APIs** is based on the clean core usage guidelines for SAP APIs. For usage of released SAP APIs no ATC findings are reported, for usage of an SAP classic APIs the check reports an information message, for usage of an API which is not classified (internal API) the check reports a warning and for usage of an API marked as **no API** an error message is reported. You can take a closer look at the documentation of the **Usage of APIs** check in the details of ATC analysis results.
 
 2. SAP offers recommendations for release independent upgrade stable SAP APIs (classic APIs), which shall be used in classic ABAP developments and provides the list of classic APIs  as **objectClassifications_SAP.json** on the **GitHub - SAP/abap-atc-cr-cv-s4hc**. This information is used by the ATC to govern the usage of classic APIs in custom code developments. The classic APIs are based on the SAP recommendations for classic ABAP development technologies, reuse services and application specific frameworks, which should be utilized in classic ABAP developments (see the SAP Note [3578329](https://me.sap.com/notes/3578329) for more details). Let's inspect classic APIs using the Cloudification Repository viewer on GitHub. For this click on the link below to open the viewer: [https://sap.github.io/abap-atc-cr-cv-s4hc/?version=objectClassifications_SAP.json](https://sap.github.io/abap-atc-cr-cv-s4hc/?version=objectClassifications_SAP.json).
 
