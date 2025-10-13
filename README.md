@@ -23,7 +23,7 @@ The requirements to follow the exercises in this repository are the ABAP develop
     - [Exercise 2.1 - Generate SAP Fiori RAP application for Flight Evaluation](exercises/ex2#exercise-21-generate-sap-fiori-rap-application-for-flight-evaluation)
     - [Exercise 2.2 - Add the functionality to enter a flight rating for a customer](exercises/ex2#exercise-22-add-the-functionality-to-enter-a-flight-rating-for-a-customer)
     - [Exercise 2.3 - Add the functionality to add new flight evaluation data](exercises/ex2#exercise-23-add-the-functionality-to-add-new-flight-evaluation-data)
-    - [Exercise 2.4 - Add visualisation for flight ratings using asterisks](exercises/ex2#exercise-24-add-visualisation-for-flight-ratings-using-asterisks)
+    - [Exercise 2.4 - Change visualisation towards star rating of flights](exercises/ex2#exercise-24-change-visualisation-towards-star-rating-of-flights)
 - [Exercise 3 - Analyze the Customer Dashboard application for clean core](exercises/ex3/)
     - [Exercise 3.1 - Analyze Customer Dashboard application for ABAP Cloud with ABAP test cockpit (ATC)](exercises/ex3#exercise-31-analyze-customer-dashboard-application-for-abap-cloud-with-abap-test-cockpt-atc)
     - [Exercise 3.2 - Analyze Customer Dashboard application for clean core with ABAP test cockpit (ATC) and get to know Cloudification Repository Viewer](exercises/ex3#exercise-32-analyze-customer-dashboard-application-for-clean-core-with-abap-test-cockpit-atc-and-get-to-know-cloudification-repository-viewer)
