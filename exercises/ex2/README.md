@@ -112,9 +112,9 @@ Save and activate the Behavior Implementation **`ZBP_FLEVAL_EX_##`**.
    
 <br>![](/exercises/ex2/images/dt260_ex2_5_fiori_create_evaldata_button.png)
 
-## Exercise 2.4 Add visualisation for flight ratings using asterisks
+## Exercise 2.4 Change visualisation towards star rating of flights
 
-After completing these steps the SAP Fiori Flight Evaluation application will be able to display flight ratings for meal, flight and service quality using asterisks.
+After completing these steps the SAP Fiori Flight Evaluation application will be able to display flight ratings for meal, flight and service quality using start rating.
 
 1.	Open the Metadata Extension **`ZC_FLEVAL_EX_##`** and replace the source code after the **Name;** for meal, flight and service ratings with the following code:
    
@@ -163,7 +163,7 @@ After completing these steps the SAP Fiori Flight Evaluation application will be
 ```
 Save and activate the Metadata Extension **`ZC_FLEVAL_EX_##`**.
 
-2.	Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you see the asterisks for the meal, flight and service ratings.
+2.	Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you see the stars for the meal, flight and service ratings.
    
 <br>![](/exercises/ex2/images/dt260_ex2_6_fiori_asterisks.png)
 
