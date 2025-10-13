@@ -92,7 +92,7 @@ Save and activate the Behavior Implementation **`ZBP_FLEVAL_EX_##`**.
 
 3.	Add the following code to your Behavior Definition **`ZR_FLEVAL_EX_##`** save and activate.
    ```abap
-  static action createFlightEval parameter ZDT260_A_FLIGTHEVAL_5;
+  static action createFlightEval parameter ZDT260_A_FLIGHTEVAL_5;
    ```
 4. You will get the syntax error telling that the method **createFlightEval** must be added for the action. Use quick fix (**Ctrl + 1** shortcut) to generate the method in the local handler class of the correspondng Behavior Implementation class **`ZBP_FLEVAL_EX_##`**. 
 
