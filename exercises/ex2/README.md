@@ -41,8 +41,6 @@ After completing these steps, you will be able to enter and store customer fligh
             i_fldate = ls_update-Fldate
             i_bookid = ls_update-BookID
         ).
-        eval_obj->set_customer_id( ls_update-CustomID ).
-        eval_obj->set_customer_name( ls_update-Name ).
         eval_obj->set_flight_rating( ls_update-FlightRating ).
         eval_obj->set_meal_rating( ls_update-MealRating ).
         eval_obj->set_service_rating( ls_update-ServiceRating ).
