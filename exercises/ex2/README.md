@@ -52,7 +52,11 @@ After completing these steps, you will be able to enter and store customer fligh
     ENDIF.
 
 ```
-3. Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you can enter flight rating data for a customer and it will be stored in your flight evaluations table **`ZFLEVAL_EX_##`**.
+3.	Now in the Behavior Definition **`ZR_FLEVAL_EX_##`** change the authorizations so that **CustomID** and **Name** can not be changed as shown on the screenshot below. Save and activate the Behavior Definition **`ZR_FLEVAL_EX_##`**. 
+
+<br>![](/exercises/ex2/images/dt260_ex2_45_create_update_auth.png)
+
+4. Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you can enter flight rating data for a customer and it will be stored in your flight evaluations table **`ZFLEVAL_EX_##`**.
    
 ## Exercise 2.3 Add the functionality to add new flight evaluation data 
 
