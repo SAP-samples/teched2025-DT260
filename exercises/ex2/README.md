@@ -26,7 +26,7 @@ After completing these steps, you will be able to enter and store customer fligh
 
 <br>![](/exercises/ex2/images/dt260_ex2_3_add_unmanaged_save.png)
 
-2.	Now add the functionality that allows users to enter a flight rating for a customer and save it in the **`ZFLEVAL_EX_##`** flight evaluation table. For this add the following code to the **save_modified** method of the local handler class of your  Behavior Implementation class **`ZBP_FLEVAL_EX_##`**, save and activate it.
+2.	Now add the functionality that allows users to enter a flight rating for a customer and save it in the **`ZFLEVAL_EX_##`** flight evaluation table. For this add the following code to the **save_modified** method of the local handler class of your  Behavior Implementation class **`ZBP_FLEVAL_EX_##`**, replace **`##`** with your group number in your code, save and activate it.
    
 ```abap
 
@@ -34,8 +34,8 @@ After completing these steps, you will be able to enter and store customer fligh
 
     ELSEIF update IS NOT INITIAL.
       LOOP AT update-flighteval INTO DATA(ls_update).
-        DATA eval_obj TYPE REF TO zcl_flight_evaluation_ex_00.
-        eval_obj = NEW zcl_flight_evaluation_ex_00(
+        DATA eval_obj TYPE REF TO zcl_flight_evaluation_ex_##.
+        eval_obj = NEW zcl_flight_evaluation_ex_##(
             i_carrid = ls_update-CarrID
             i_connid = ls_update-ConnID
             i_fldate = ls_update-Fldate
@@ -54,7 +54,7 @@ After completing these steps, you will be able to enter and store customer fligh
     ENDIF.
 
 ```
-3. Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you can enter flight rating data for a customer and it will be stored in your flight evaluations table **`ZFLEVAL_EX_00`**.
+3. Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you can enter flight rating data for a customer and it will be stored in your flight evaluations table **`ZFLEVAL_EX_##`**.
    
 ## Exercise 2.3 Add the functionality to add new flight evaluation data 
 
@@ -95,11 +95,11 @@ After completing these steps, you will be able to create new flight evalations i
        CLASS-DATA buffer TYPE STANDARD TABLE OF gty_buffer WITH EMPTY KEY.
       ENDCLASS.
    ```
-6. Finallty use the **lcl_buffer** class in the **save_modified** method by adding this code to the **ELSE** clause of the **IF**-statement.
+6. Finally use the **lcl_buffer** class in the **save_modified** method by adding this code to the **ELSE** clause of the **IF**-statement. Replace **`##`** in the code with your group number.
 ```abap
    LOOP AT lcl_buffer=>buffer INTO DATA(buffer).
      DATA(lt_evaluation_data) =
-         zcl_flight_evaluation_ex_00=>create_flight_evaluation( i_carrid = buffer-carrid
+         zcl_flight_evaluation_ex_##=>create_flight_evaluation( i_carrid = buffer-carrid
                                                                 i_connid = buffer-connid
                                                                 i_fldate = buffer-fldate ).
    ENDLOOP.
