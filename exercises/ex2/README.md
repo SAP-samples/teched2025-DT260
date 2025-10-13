@@ -114,9 +114,9 @@ Save and activate the Behavior Implementation **`ZBP_FLEVAL_EX_##`**.
 
 ## Exercise 2.4 Change visualisation towards star rating of flights
 
-After completing these steps the SAP Fiori Flight Evaluation application will be able to display flight ratings for meal, flight and service quality using start rating.
+After completing these steps the SAP Fiori Flight Evaluation application will be able to display star ratings for meal, flight and service quality of flights.
 
-1.	Open the Metadata Extension **`ZC_FLEVAL_EX_##`** and replace the source code after the **Name;** for meal, flight and service ratings with the following code:
+1.	Open the Metadata Extension **`ZC_FLEVAL_EX_##`** and replace the source code after the **Name** for meal, flight and service ratings with the following code:
    
 ```abap
     @UI.lineItem: [ {
