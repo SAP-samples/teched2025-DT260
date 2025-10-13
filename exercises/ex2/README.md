@@ -66,19 +66,30 @@ After completing these steps, you will be able to create new flight evalations i
 
    <br>![](/exercises/ex2/images/dt260_ex2_4_add_static_action.png)
 
-3.	Now use the action by adding the following code to the Behavior Definition **`ZC_FLEVAL_EX_##`**.
+3. Add the following code as the  **createFlightEval** method implementation.
+```abap
+  METHOD createFlightEval.
+    LOOP AT keys INTO DATA(key).
+      INSERT VALUE #( carrid = key-%param-CarrId
+                      connid = key-%param-ConnId
+                      fldate = key-%param-fldate ) INTO TABLE lcl_buffer=>buffer.
+    ENDLOOP.
+  ENDMETHOD.
+```
+   
+4.	Now use the action by adding the following code to the Behavior Definition **`ZC_FLEVAL_EX_##`**.
   ```abap
   use action createFlightEval;
    ```
 <br>![](/exercises/ex2/images/dt260_ex2_41_use_static_action.png)
 
-4.	To see the **Create Flight Eval Data** button on the UI you need to add the following code to the Metadata Extension **`ZC_FLEVAL_EX_##`**.
+5.	To see the **Create Flight Eval Data** button on the UI you need to add the following code to the Metadata Extension **`ZC_FLEVAL_EX_##`**.
   ```abap
    ,{ type: #FOR_ACTION, dataAction: 'createFlightEval', label: 'Create Flight Eval Data' } 
    ```
 <br>![](/exercises/ex2/images/dt260_ex2_42_use_static_action_mde.png)
 
-5. Add the logic to enter the flight evaluation data by adding the local handler class **lcl_buffer** to the Behavior Implementation class **`ZBP_FLEVAL_EX_##`**.
+6. Add the logic to enter the flight evaluation data by adding the local handler class **lcl_buffer** to the Behavior Implementation class **`ZBP_FLEVAL_EX_##`**.
    
    ```abap
      CLASS lcl_buffer DEFINITION.
@@ -93,7 +104,7 @@ After completing these steps, you will be able to create new flight evalations i
        CLASS-DATA buffer TYPE STANDARD TABLE OF gty_buffer WITH EMPTY KEY.
       ENDCLASS.
    ```
-6. Finally use the **lcl_buffer** class in the **save_modified** method by adding this code to the **ELSE** clause of the **IF**-statement. Replace **`##`** in the code with your group number.
+7. Finally use the **lcl_buffer** class in the **save_modified** method by adding this code to the **ELSE** clause of the **IF**-statement. Replace **`##`** in the code with your group number.
 ```abap
    LOOP AT lcl_buffer=>buffer INTO DATA(buffer).
      DATA(lt_evaluation_data) =
@@ -106,7 +117,7 @@ After completing these steps, you will be able to create new flight evalations i
 
 Save and activate the Behavior Implementation **`ZBP_FLEVAL_EX_##`**.
 
-6. Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you can fill the flight evaluations table with additional flight evaluations from the SAP standard SBOOK table. Just follow the steps on the screenshots below.
+8. Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you can fill the flight evaluations table with additional flight evaluations from the SAP standard SBOOK table. Just follow the steps on the screenshots below.
    
 <br>![](/exercises/ex2/images/dt260_ex2_5_fiori_create_evaldata_button.png)
 
