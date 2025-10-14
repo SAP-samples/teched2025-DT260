@@ -63,7 +63,7 @@ After completing these steps, you will be able to enter and store customer fligh
 
 After completing these steps, you will be able to create new flight evalations in the SAP Fiori Flight Evaluation application. For this the new button **Create Flight Eval Data** will be added to the UI.
 
-1. Add the logic to enter the flight evaluation data by adding the local handler class **lcl_buffer** to the Behavior Implementation class **`ZBP_FLEVAL_EX_##`**.
+1. Add the logic to enter the flight evaluation data by adding the local handler class **lcl_buffer** to the Behavior Implementation class **`ZBP_FLEVAL_EX_##`** (under the tab **Local Types** of the editor bottom bar)
    
    ```abap
      CLASS lcl_buffer DEFINITION.
