@@ -22,11 +22,15 @@ After completing these steps you will have created the modern SAP Fiori RAP-base
 
 After completing these steps, you will be able to enter and store customer flight ratings in the SAP Fiori Flight Evaluation application.
 
-1.	Open the Behavior Definition **`ZR_FLEVAL_EX_##`** and add the source code line **with unmanaged save** to let you (not the RAP framework) manage the table **`ZFLEVAL_EX_##`** with flight evaluations. You will get the error message, telling that it is not possible to specify the persistent table and use unmanaged scenario at the same time. Follow the steps on the screenshots below to comment out the **persistent table**-statement and apply the quick fixes (**Ctrl + 1** shortcut) to generate the required **save_modified** method in the local handler class of the corresponding Behavior Implementation class **`ZBP_FLEVAL_EX_##`**.
+1.	First open the Behavior Definition **`ZR_FLEVAL_EX_##`** and change the authorizations so that **CustomID** and **Name** can not be changed as shown on the screenshot below.  
+
+<br>![](/exercises/ex2/images/dt260_ex2_45_create_update_auth.png)
+
+2.	Now in the Behavior Definition **`ZR_FLEVAL_EX_##`** add the source code line **with unmanaged save** to let you (not the RAP framework) manage the table **`ZFLEVAL_EX_##`** with flight evaluations. You will get the error message, telling that it is not possible to specify the persistent table and use unmanaged scenario at the same time. Follow the steps on the screenshots below to comment out the **persistent table**-statement and apply the quick fixes (**Ctrl + 1** shortcut) to generate the required **save_modified** method in the local handler class of the corresponding Behavior Implementation class **`ZBP_FLEVAL_EX_##`**.
 
 <br>![](/exercises/ex2/images/dt260_ex2_3_add_unmanaged_save.png)
 
-2.	Now add the functionality that allows users to enter a flight rating for a customer and save it in the **`ZFLEVAL_EX_##`** flight evaluation table. For this add the following code to the **save_modified** method of the local handler class of your  Behavior Implementation class **`ZBP_FLEVAL_EX_##`**, replace **`##`** with your group number in your code, save and activate it.
+3.	Now add the functionality that allows users to enter a flight rating for a customer and save it in the **`ZFLEVAL_EX_##`** flight evaluation table. For this add the following code to the **save_modified** method of the local handler class of your  Behavior Implementation class **`ZBP_FLEVAL_EX_##`**, replace **`##`** with your group number in your code, save and activate it.
    
 ```abap
 
@@ -52,9 +56,6 @@ After completing these steps, you will be able to enter and store customer fligh
     ENDIF.
 
 ```
-3.	Now in the Behavior Definition **`ZR_FLEVAL_EX_##`** change the authorizations so that **CustomID** and **Name** can not be changed as shown on the screenshot below. Save and activate the Behavior Definition **`ZR_FLEVAL_EX_##`**. 
-
-<br>![](/exercises/ex2/images/dt260_ex2_45_create_update_auth.png)
 
 4. Start the SAP Fiori application in preview by opening the Service Binding **`ZUI_FLEVAL_EX_##_O4`** and clicking **Preview...** for the **FlighEval**. Now you can enter flight rating data for a customer and it will be stored in your flight evaluations table **`ZFLEVAL_EX_##`**.
    
