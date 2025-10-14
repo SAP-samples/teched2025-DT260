@@ -100,13 +100,11 @@ Save and activate the Behavior Implementation **`ZBP_FLEVAL_EX_##`**.
 
 5. Add the following code as the  **createFlightEval** method implementation.
 ```abap
-  METHOD createFlightEval.
     LOOP AT keys INTO DATA(key).
       INSERT VALUE #( carrid = key-%param-CarrId
                       connid = key-%param-ConnId
                       fldate = key-%param-fldate ) INTO TABLE lcl_buffer=>buffer.
     ENDLOOP.
-  ENDMETHOD.
 ```
    
 6.	Now use the action by adding the following code to the Behavior Definition **`ZC_FLEVAL_EX_##`**.
