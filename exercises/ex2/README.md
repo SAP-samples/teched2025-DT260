@@ -26,7 +26,7 @@ After completing these steps, you will be able to enter and store customer fligh
 
 <br>![](/exercises/ex2/images/dt260_ex2_45_create_update_auth.png)
 
-2.	Let's implement an **Unmanaged Save** because we want to reuse our existing class **`ZCL_FLIGHT_EVALUATION_EX_##`. In the Behavior Definition **`ZR_FLEVAL_EX_##`** add the source code line **with unmanaged save** to let you (not the RAP framework) manage the table **`ZFLEVAL_EX_##`** with flight evaluations. You will get the error message, telling that it is not possible to specify the persistent table and use unmanaged scenario at the same time. Follow the steps on the screenshots below to comment out the **persistent table**-statement and apply the quick fixes (**Ctrl + 1** shortcut) to generate the required **save_modified** method in the local handler class of the corresponding Behavior Implementation class **`ZBP_FLEVAL_EX_##`**.
+2.	Let's implement an **Unmanaged Save** because we want to reuse our existing class **`ZCL_FLIGHT_EVALUATION_EX_##`**. In the Behavior Definition **`ZR_FLEVAL_EX_##`** add the source code line **with unmanaged save** to let you (not the RAP framework) manage the table **`ZFLEVAL_EX_##`** with flight evaluations. You will get the error message, telling that it is not possible to specify the persistent table and use unmanaged scenario at the same time. Follow the steps on the screenshots below to comment out the **persistent table**-statement and apply the quick fixes (**Ctrl + 1** shortcut) to generate the required **save_modified** method in the local handler class of the corresponding Behavior Implementation class **`ZBP_FLEVAL_EX_##`**.
 
 <br>![](/exercises/ex2/images/dt260_ex2_3_add_unmanaged_save.png)
 
