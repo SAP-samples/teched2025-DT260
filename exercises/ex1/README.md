@@ -1,5 +1,6 @@
 # Exercise 1 - Modernize the Flight Evaluation application with ABAP Cloud
 
+## Scenario Overview
 The Flight Evaluation application was developed with classic ABAP and is designed to collect customer feedback for the flights of different flight companies with regard to meal, flight and service quality.
 The rating is based on the 0-to-5 scale, with 0 representing the lowest possible score (e.g., "very poor" or "unsatisfactory") and 5 representing the highest (e.g., "outstanding"). 
 In this exercise, you will modernize the Flight Evaluation application using ABAP Cloud by transforming its application logic to the ABAP Cloud development model. 
