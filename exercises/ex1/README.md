@@ -43,7 +43,7 @@ After completing these steps you will have adopted the application logic of the 
 
    Replace the method **create_guid** with this code.
    
-      ```abap
+   ```abap
       METHOD create_guid.
        TRY.
            cl_system_uuid=>create_uuid_x16_static(
@@ -53,7 +53,7 @@ After completing these steps you will have adopted the application logic of the 
          CATCH cx_uuid_error.
        ENDTRY.
       ENDMETHOD.
-      ```
+   ```
    Save and activate your class and recheck it by ATC using context menu **Recheck**. You will see, that this ATC error was gone and now you have only 3 errors.
    
    <br>![](/exercises/ex1/images/dt260_ex1_8_atc_recheck.png)
