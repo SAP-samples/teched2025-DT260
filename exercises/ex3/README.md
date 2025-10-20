@@ -51,7 +51,7 @@ After completing these steps you will have learned how to execute clean core ATC
 
     <br>![](/exercises/ex3/images/dt260_ex3_12_cloud_repo_successor.png)
 
-7. Play auround with the Cloudification Repository Viewer looking for the APIs, for example look for the API which you are familiar with, to verify if it was nominated as a classic API. By the way you can also choose another repository under **Repository Selection** and look for example for released APIs for the particular SAP S/4HANA edition.
+7. Play auround with the Cloudification Repository Viewer looking for the APIs, for example look for the API which you are familiar with, to verify if it was nominated as a classic API. By the way you can also specify **SAP Product**, **Release** and as state **Released** to look for example for the available released APIs in the chosen release of the selected SAP product.
      
 ## Exercise 3.3 Understand clean core ABAP test cockpit (ATC) issues
 
