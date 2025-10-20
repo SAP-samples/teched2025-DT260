@@ -35,7 +35,7 @@ After completing these steps you will have learned how to execute clean core ATC
 
    <br>![](/exercises/ex3/images/dt260_ex3_6_cloud_repo_viewer.png)   
 
-3. After clicking on the **Show Filter Bar** you can filter the display. Let's find the ALV Grid classic API **CL_SALV_TABLE**, which was reported by the clean core ATC checks. For this select state *Classic API*, Software Component *SAP_BASIS* and Application Component *BC-SRV-ALV* and you will get the list of all ALV Grid classic APIs including the **CL_SALV_TABLE**.
+3. Let's find the ALV Grid classic API **CL_SALV_TABLE**, which was reported by the clean core ATC checks. For this select state *Classic API*, Software Component *SAP_BASIS* and Application Component *BC-SRV-ALV* and you will get the list of all ALV Grid classic APIs including the **CL_SALV_TABLE**.
 
    <br>![](/exercises/ex3/images/dt260_ex3_7_cloud_repo_alvgrid.png)
 
