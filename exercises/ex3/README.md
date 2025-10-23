@@ -3,6 +3,17 @@
 The Customer Dashboard application is content-wise connected with the Flight Evaluation application. It was developed with classic ABAP and is designed to display the data of the specific customer along with the collected flight feedback. This application should not be modernized with ABAP Cloud but must become clean core compliant.
 In this exercise, you will analyze the Customer Dashboard application for ABAP Cloud and clean core, learn to interpret clean core issues and understand why the new clean core ABAP test cockpit (ATC) checks significantly reduce the number of findings.
 
+
+## 🔴 Important Information
+
+> **📌 Note**   
+> We’ve got sessions running in several locations → please pick the one that’s right for you!
+
+> **📌 Replace the two digits to get your group number:**
+> * ZDT260_EX**##** → **01** → **40** → **SAP TechEd Berlin**  (e.g ``ZDT260_EX_019``)
+> * ZDT260_EX_**6##** → **600** → **699** → **ASUG Tech-Connect**  (e.g ``ZDT260_EX_623``)
+
+
 ## Exercise 3.1 Analyze Customer Dashboard application for ABAP Cloud with ABAP test cockpit (ATC)
 
 After completing these steps you will have understood how the Customer Dashboard application works and executed ABAP Cloud readiness checks with ABAP test cockpit (ATC) to get the ATC result list of the incompatible issues with ABAP Cloud.
@@ -31,7 +42,7 @@ After completing these steps you will have learned how to execute clean core ATC
    
    Some check results indicate usage of **classic APIs**, **internal APIs** and **APIs that must no be used** in the code. This is because the new clean core check **Usage of APIs** is based on the clean core usage guidelines for SAP APIs. For usage of released SAP APIs no ATC findings are reported, for usage of an SAP classic APIs the check reports an information message, for usage of an API which is not classified (internal API) the check reports a warning and for usage of an API marked as **no API** an error message is reported. You can take a closer look at the documentation of the **Usage of APIs** check in the details of ATC analysis results.
 
-2. SAP offers recommendations for release independent upgrade stable SAP APIs (classic APIs), which shall be used in classic ABAP developments and provides the list of classic APIs  as **objectClassifications_SAP.json** on the **GitHub - SAP/abap-atc-cr-cv-s4hc**. This information is used by the ATC to govern the usage of classic APIs in custom code developments. The classic APIs are based on the SAP recommendations for classic ABAP development technologies, reuse services and application specific frameworks, which should be utilized in classic ABAP developments (see the SAP Note [3578329](https://me.sap.com/notes/3578329) for more details). Let's inspect classic APIs using the Cloudification Repository viewer on GitHub. For this click on the link below to open the viewer: [https://sap.github.io/abap-atc-cr-cv-s4hc/](https://sap.github.io/abap-atc-cr-cv-s4hc/).
+2. SAP offers recommendations for release independent upgrade stable SAP APIs (classic APIs), which shall be used in classic ABAP developments and provides the list of classic APIs  as **objectClassifications_SAP.json** on the **GitHub - SAP/abap-atc-cr-cv-s4hc**. This information is used by the ATC to govern the usage of classic APIs in custom code developments. The classic APIs are based on the SAP recommendations for classic ABAP development technologies, reuse services and application specific frameworks, which should be utilized in classic ABAP developments (see the SAP Note [3578329](https://me.sap.com/notes/3578329) for more details). Let's inspect classic APIs using the Cloudification Repository viewer on GitHub. For this click on the link below to open the viewer: [https://sap.github.io/abap-atc-cr-cv-s4hc](https://sap.github.io/abap-atc-cr-cv-s4hc).
 
    <br>![](/exercises/ex3/images/dt260_ex3_6_cloud_repo_viewer.png)   
 
@@ -51,7 +62,7 @@ After completing these steps you will have learned how to execute clean core ATC
 
     <br>![](/exercises/ex3/images/dt260_ex3_12_cloud_repo_successor.png)
 
-7. Play auround with the Cloudification Repository Viewer looking for the APIs, for example look for the API which you are familiar with, to verify if it was nominated as a classic API. By the way you can also specify **SAP Product**, **Release** and as state **Released** to look for example for the available released APIs in the chosen release of the selected SAP product.
+7. Play auround with the Cloudification Repository Viewer looking for the APIs, for example look for the API which you are familiar with, to verify if it was nominated as a classic API. By the way you can also choose another repository under **Repository Selection** and look for example for released APIs for the particular SAP S/4HANA edition.
      
 ## Exercise 3.3 Understand clean core ABAP test cockpit (ATC) issues
 

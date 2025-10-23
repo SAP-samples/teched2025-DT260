@@ -5,6 +5,16 @@ The Flight Evaluation application was developed with classic ABAP and is designe
 The rating is based on the 0-to-5 scale, with 0 representing the lowest possible score (e.g., "very poor" or "unsatisfactory") and 5 representing the highest (e.g., "outstanding"). 
 In this exercise, you will modernize the Flight Evaluation application using ABAP Cloud by transforming its application logic to the ABAP Cloud development model. 
 
+## 🔴 Important Information
+
+> **📌 Note**   
+> We’ve got sessions running in several locations → please pick the one that’s right for you!
+
+> **📌 Replace the two digits to get your group number:**
+> * ZDT260_EX**##** → **01** → **40** → **SAP TechEd Berlin**  (e.g ``ZDT260_EX_019``)
+> * ZDT260_EX_**6##** → **600** → **699** → **ASUG Tech-Connect**  (e.g ``ZDT260_EX_623``)
+
+
 ## Exercise 1.1 Get to know the Flight Evaluation application and analyze it for ABAP Cloud with ABAP test cockpit (ATC)
 
 After completing these steps you will have understood how the Flight Evaluation application works and executed ABAP test cockpit (ATC) ABAP Cloud readiness checks to get the ATC result list of the incompatible issues with ABAP Cloud.
@@ -43,7 +53,7 @@ After completing these steps you will have adopted the application logic of the 
 
    Replace the method **create_guid** with this code.
    
-   ```abap
+      ```abap
       METHOD create_guid.
        TRY.
            cl_system_uuid=>create_uuid_x16_static(
@@ -53,7 +63,7 @@ After completing these steps you will have adopted the application logic of the 
          CATCH cx_uuid_error.
        ENDTRY.
       ENDMETHOD.
-   ```
+      ```
    Save and activate your class and recheck it by ATC using context menu **Recheck**. You will see, that this ATC error was gone and now you have only 3 errors.
    
    <br>![](/exercises/ex1/images/dt260_ex1_8_atc_recheck.png)

@@ -2,6 +2,16 @@
 
 In this exercise, you will prepare your ABAP development tools for Eclipse environment, create ABAP development project and select development packages required for your exercises 1-3.
 
+## 🔴 Important Information
+
+> **📌 Note**   
+> We’ve got sessions running in several locations → please pick the one that’s right for you!
+
+> **📌 Replace the two digits to get your group number:**
+> * ZDT260_EX**##** → **01** → **40** → **SAP TechEd Berlin**  (e.g ``ZDT260_EX_019``)
+> * ZDT260_EX_**6##** → **600** → **699** → **ASUG Tech-Connect**  (e.g ``ZDT260_EX_623``)
+
+
 ## Introduction
 
 1. The screenshots for these exercises have been prepared in the SAP TechEd system **`HE4`** using ABAP user **`DT260-00`** with the group ID **`00`**.
