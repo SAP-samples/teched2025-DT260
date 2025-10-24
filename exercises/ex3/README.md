@@ -72,7 +72,7 @@ After completing these steps you will have learned how the clean core ATC check 
 
    <br>![](/exercises/ex3/images/dt260_ex3_9_cloud_cc_atc_variant.png)
 
-2. Take a look again at your last clean core ATC check results executed with the variant **ZDT260_CLEAN_CORE_DEVEOPMENT** in the Exercise 3.2. To make the code clean core compliant you would need to resolve the ATC clean core issues in the following way. Instead of update on the SAP table use released or classic SAP API, read access to the SAP table should be replaced with released CDS view or classic API, usages of classic APIs are clean core conform. More recommendations are provided in the chapter 5 of the [ABAP Extensibility Guide](https://www.sap.com/documents/2022/10/52e0cd9b-497e-0010-bca6-c68f7e60039b.html).
+2. Take a look again at your last clean core ATC check results executed with the variant **ZDT260_CLEAN_CORE_DEVELOPMENT** in the Exercise 3.2. To make the code clean core compliant you would need to resolve the ATC clean core issues in the following way. Instead of update on the SAP table use released or classic SAP API, read access to the SAP table should be replaced with released CDS view or classic API, usages of classic APIs are clean core conform. More recommendations are provided in the chapter 5 of the [ABAP Extensibility Guide](https://www.sap.com/documents/2022/10/52e0cd9b-497e-0010-bca6-c68f7e60039b.html).
    
     <br>![](/exercises/ex3/images/dt260_ex3_10_analyze_cc_atc_findings.png)
    
