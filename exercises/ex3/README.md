@@ -32,7 +32,7 @@ After completing these steps you will have understood how the Customer Dashboard
 
 After completing these steps you will have learned how to execute clean core ATC checks and to work with the Cloudification Repository Viewer.
 
-1. Now it's time to analyze the Customer Dashboard application for clean core. Select the ABAP program  **`ZCUSTOMER_DASHBOARD`** in the Project Explorer and use the context menu **Run As->ABAP Test Cockpit With...** with the **ZDT260_CLEAN_CORE_DEVEOPMENT** check variant to execute clean core checks. 
+1. Now it's time to analyze the Customer Dashboard application for clean core. Select the ABAP program  **`ZCUSTOMER_DASHBOARD`** in the Project Explorer and use the context menu **Run As->ABAP Test Cockpit With...** with the **ZDT260_CLEAN_CORE_DEVELOPMENT** check variant to execute clean core checks. 
    
      <br>![](/exercises/ex3/images/dt260_ex3_4_run_atc_clean_core.png)
    
