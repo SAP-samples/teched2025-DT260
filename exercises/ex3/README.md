@@ -10,7 +10,7 @@ In this exercise, you will analyze the Customer Dashboard application for ABAP C
 > We’ve got sessions running in several locations → please pick the one that’s right for you!
 
 > **📌 Replace the two digits to get your group number:**
-> * ZDT260_EX**##** → **01** → **40** → **SAP TechEd Berlin**  (e.g ``ZDT260_EX_019``)
+> * ZDT260_EX_**##** → **01** → **40** → **SAP TechEd Berlin**  (e.g ``ZDT260_EX_19``)
 > * ZDT260_EX_**6##** → **600** → **699** → **ASUG Tech-Connect**  (e.g ``ZDT260_EX_623``)
 
 
