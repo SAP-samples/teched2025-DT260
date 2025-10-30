@@ -26,7 +26,7 @@ In this exercise, you will prepare your ABAP development tools for Eclipse envir
    
    <br>![](/exercises/ex0/images/dt260_ex0_1_start_eclipse.png)
 
-2.	Create ABAP project and connect to the SAP TechEd system **`HE4`**. Use client **`400`**, your user **`DT260-##`**, and password **`Welcome1!`**
+2.	Create ABAP project and connect to the SAP TechEd system **`HE4`**. Use client **`400`**, your user **`DT260-##`**, and password **`Welcome1!`**. If you don't see **`HE4`** in the list, define a new connection by clicking on the link  **new system connection** and entering as *System Id:* **`HE4`**, as *Application Server* **`s4hana.tdc.sap.com`** and as *Instance Number:* **`00`** and following the wizard steps clicking the **Next** button.
    
    <br>![](/exercises/ex0/images/dt260_ex0_2_create_abap_project.png)
 
