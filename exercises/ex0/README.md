@@ -26,9 +26,27 @@ In this exercise, you will prepare your ABAP development tools for Eclipse envir
    
    <br>![](/exercises/ex0/images/dt260_ex0_1_start_eclipse.png)
 
-2.	Create ABAP project and connect to the SAP TechEd system **`HE4`**. Use client **`400`**, your user **`DT260-##`**, and password **`Welcome1!`**. If you don't see **`HE4`** in the list, define a new connection by clicking on the link  **new system connection** and entering as *System Id:* **`HE4`**, as *Application Server* **`s4hana.tdc.sap.com`** and as *Instance Number:* **`00`** and following the wizard steps clicking the **Next** button.
-   
-   <br>![](/exercises/ex0/images/dt260_ex0_2_create_abap_project.png)
+2.	Create ABAP project by selecting **File** > **New** > **ABAP Project** and connect to the SAP TechEd system **`HE4`**. Use client **`400`**, your user **`DT260-##`**, and the password provided by the instructors.   
+
+   ![](/exercises/ex0/images/dt260_ex0_2_create_abap_project.png)   
+
+
+   > For **ASUG TechConnect** or if you don't see **`HE4`** in the list, define a new connection by clicking on the link  **new system connection**.
+   > ![new abap project](./images/dt260_ex0_10_add_new_system_connection.png)
+   > In the following screen enter 
+   > - *System Id:* **`HE4`**
+   > - *Connection Type:* select **`Custom Application Server`** from the drop down list
+   > - *Application Server*: **`s4hana.tdc.sap.com`
+   > - *Instance Number:* **`00`** 
+   > - *▢* : **`Secure Network Communication (SNC)`**   
+   >  
+   > Be sure to **deactivate** the SNC checkbox. 
+   >  
+   > ![new abap project](./images/dt260_ex0_11_add_new_system_connection.png)
+   > Click the **Next** button.
+   >
+   > and use client 400, your user DT260-##, and the password provided by the instructors to log on onto the system. 
+   >  
 
 3. Add your exercises packages for your group **`##`** to the **Favorite Packages*.
    
