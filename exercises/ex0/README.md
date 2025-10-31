@@ -30,24 +30,24 @@ In this exercise, you will prepare your ABAP development tools for Eclipse envir
 
    ![](/exercises/ex0/images/dt260_ex0_2_create_abap_project.png)   
 
-<details>
-   <summary>For **ASUG TechConnect** or if you don't see **`HE4`** in the list click here</summary>
-   > Define a new connection by clicking on the link  **new system connection**.
-   > ![new abap project](./images/dt260_ex0_10_add_new_system_connection.png)
-   > In the following screen enter 
-   > - *System Id:* **`HE4`**
-   > - *Connection Type:* select **`Custom Application Server`** from the drop down list
-   > - *Application Server*: **`s4hana.tdc.sap.com`
-   > - *Instance Number:* **`00`** 
-   > - *▢* : **`Secure Network Communication (SNC)`**   
-   >  
-   > ⚠️ Be sure to **deactivate** the SNC checkbox. 
-   > 
-   > Click the **Next** button to continue and use client **`400`**, your user **`DT260-##`**, and the password provided by the instructors.  to log on onto the system. 
-   >   
-   > ![new abap project](./images/dt260_ex0_11_add_new_system_connection.png)
 
-</details> 
+> For **ASUG TechConnect** or if you don't see **`HE4`** in the list do the following:   
+> Define a new connection by clicking on the link  **new system connection**.  
+>  
+> ![new abap project](./images/dt260_ex0_10_add_new_system_connection.png)  
+>  
+> In the following screen enter 
+> - *System Id:* **`HE4`**
+> - *Connection Type:* select **`Custom Application Server`** from the drop down list
+> - *Application Server*: **`s4hana.tdc.sap.com`
+> - *Instance Number:* **`00`** 
+> - *▢* : **`Secure Network Communication (SNC)`**   
+>      
+> ⚠️ Be sure to **deactivate** the SNC checkbox. 
+>     
+> Click the **Next** button to continue and use client **`400`**, your user **`DT260-##`**, and the password provided by the instructors.  to log on onto the system. 
+>  
+> ![new abap project](./images/dt260_ex0_11_add_new_system_connection.png)
 
 3. Add your exercises packages for your group **`##`** to the **Favorite Packages*.
    
