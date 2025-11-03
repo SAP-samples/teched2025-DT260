@@ -1,6 +1,6 @@
 # Exercise 2 - Create SAP Fiori application for Flight Evaluation with ABAP Cloud and RAP
 
-In this exercise, you will build the modern SAP Fiori application with ABAP Cloud using RAP unmanaged scenario on top of the Flight Evaluation application logic, transformed to ABAP Cloud in the Exercise 1. The RAP unmanaged scenario is perfectly suited for migration use cases from classic ABAP since it gives you more control over the data persistence and business logic compared to the RAP managed approach, where the RAP framework handles everything.
+In this exercise, you will build the modern SAP Fiori application with ABAP Cloud using RAP, We will use a managed scenario with unmanged save thereby leveraging the Flight Evaluation application logic, transformed to ABAP Cloud in the Exercise 1. The RAP managed scenario with an unmanaged save  is perfectly suited for migration use cases from classic ABAP since it gives you more control over the data persistence and business logic compared to the pure RAP managed approach. You can however still leverage the advantages of the managed runtime since this will take care of the draft handling which is always purely managed.
 
 ## 🔴 Important Information
 
@@ -199,6 +199,6 @@ Save and activate the Metadata Extension **`ZC_FLEVAL_EX_##`**.
 
 ## Summary
 
-You have now built a modern SAP Fiori Flight Evaluation application with ABAP Cloud and RAP unmanaged scenario reusing the logic from the SAPGUI-based Flight Evaluation application transformed to ABAP Cloud. You can display flight evaluations, create new flight evaluations and edit customer ratings for the meal, flight and service.
+You have now built a modern SAP Fiori Flight Evaluation application with ABAP Cloud and RAP unmanaged scenario and unmanaged save reusing the logic from the SAPGUI-based Flight Evaluation application transformed to ABAP Cloud. You can display flight evaluations, create new flight evaluations and edit customer ratings for the meal, flight and service.
 Continue to - [Exercise 3 - Analyze the Customer Dashboard application for clean core](../ex3/README.md)
 
