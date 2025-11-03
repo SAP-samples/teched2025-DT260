@@ -1,4 +1,5 @@
 # DT260 - Modernize classic extensions to clean core in Cloud ERP Private
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2025-DT260)](https://api.reuse.software/info/github.com/SAP-samples/teched2025-DT260)
 
 ## Description
 
