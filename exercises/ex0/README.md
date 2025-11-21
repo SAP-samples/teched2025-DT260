@@ -14,7 +14,7 @@ In this exercise, you will prepare your ABAP development tools for Eclipse envir
 ## Introduction
 
 1. The screenshots for these exercises have been prepared in the SAP TechEd system **`HE4`** using ABAP user **`DT260-00`** with the group ID **`00`**.
-2. The explanation in the exercises will remind you to use your group number (indicated by **`##`**), e.g. ABAP class **`ZCL_FLIGHT_EVALUATION_EX_###`**. 
+2. The explanation in the exercises will remind you to use your group number (indicated by **`###`**), e.g. ABAP class **`ZCL_FLIGHT_EVALUATION_EX_###`**. 
 3. You will work in the standard ABAP package **`ZDT260_EX_###`** and transform your cloud ready ABAP artfacts to the ABAP Cloud package **`ZDT260_EX_###_5`**, where "5" indicates ABAP for Cloud Development language version.
 4. Please note that ABAP development tools for Eclipse dialogs and views, as well as SAP Fiori UIs, may change in future releases.
 5. You can find a solution for this workshop in the development package **`ZDT260_SOLUTION_5`**.
