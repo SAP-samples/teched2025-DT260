@@ -1,33 +1,32 @@
 # Exercise 1 - Modernize the Flight Evaluation application with ABAP Cloud
 
-## Scenario Overview
+### Scenario Overview
 The Flight Evaluation application was developed with classic ABAP and is designed to collect customer feedback for the flights of different flight companies with regard to meal, flight and service quality.
 The rating is based on the 0-to-5 scale, with 0 representing the lowest possible score (e.g., "very poor" or "unsatisfactory") and 5 representing the highest (e.g., "outstanding"). 
 In this exercise, you will modernize the Flight Evaluation application using ABAP Cloud by transforming its application logic to the ABAP Cloud development model. 
 
-## 🔴 Important Information
+### 🔴 Important Information
 
 > **📌 Note**   
 > We’ve got sessions running in several locations → please pick the one that’s right for you!
 
 > **📌 Replace the two digits to get your group number:**
-> * ZDT260_EX_**##** → **01** → **40** → **SAP TechEd Berlin**  (e.g ``ZDT260_EX_19``)
-> * ZDT260_EX_**6##** → **600** → **699** → **ASUG Tech-Connect**  (e.g ``ZDT260_EX_623``)
+> * ZDT260_EX_**7###** → **700** → **799** → **SAP TechEd Bangalore**  (e.g ``ZDT260_EX_723``)
 
 
-## Exercise 1.1 Get to know the Flight Evaluation application and analyze it for ABAP Cloud with ABAP test cockpit (ATC)
+### Exercise 1.1 Get to know the Flight Evaluation application and analyze it for ABAP Cloud with ABAP test cockpit (ATC)
 
 After completing these steps you will have understood how the Flight Evaluation application works and executed ABAP test cockpit (ATC) ABAP Cloud readiness checks to get the ATC result list of the incompatible issues with ABAP Cloud.
 
-1. Start the Flight Evaluation application. Run the ABAP program  **`ZFLIGHT_EVALUATION_EX_##`** by selecting it in the Project Explorer and clicking **F8** button. The program will be started in ABAP development tools for Eclipse embedded in the SAP GUI. Enter the carrier id **LH**, connection id **0400** and flight date e.g **16.02.2025** as proposed on the screenshot and click **Execute** button.
+1. Start the Flight Evaluation application. Run the ABAP program  **`ZFLIGHT_EVALUATION_EX_###`** by selecting it in the Project Explorer and clicking **F8** button. The program will be started in ABAP development tools for Eclipse embedded in the SAP GUI. Enter the carrier id **LH**, connection id **0400** and flight date e.g **16.02.2025** as proposed on the screenshot and click **Execute** button.
    
    <br>![](/exercises/ex1/images/dt260_ex1_1_start_abap_program.png)
 
-2. The ABAP program **`ZFLIGHT_EVALUATION_EX_##`** will display the customer data (like booking id, customer number, customer name) for the selected flight and flight date along with the customer ratings for meal, flight and service. Double-click on a table row and enter ratings for meal, flight and service for the selected customer on the used flight connection. Play around with the program to get to know it: e.g. you can sort the table and enter further customers evaluations.
+2. The ABAP program **`ZFLIGHT_EVALUATION_EX_###`** will display the customer data (like booking id, customer number, customer name) for the selected flight and flight date along with the customer ratings for meal, flight and service. Double-click on a table row and enter ratings for meal, flight and service for the selected customer on the used flight connection. Play around with the program to get to know it: e.g. you can sort the table and enter further customers evaluations.
    
    <br>![](/exercises/ex1/images/dt260_ex1_2_enter_data_abap_program.png)
 
-3. Now it's time to analyze the Flight Evaluation application for ABAP Cloud. Since the application logic is implemented in the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** using the table **`ZFLEVAL_EX_##`** you would need only to analyze the class. You will leave the ABAP program **`ZFLIGHT_EVALUATION_EX_##`** as it is, since for the purpose of modernization in the upcoming exercises you will provide the Flight Evaluation application with the new SAP Fiori UI and will not need the ABAP program any longer. Select the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** in the Project Explorer and use the context menu **Run As->ABAP Test Cockpit With...** with the **ABAP_CLOUD_READINESS** check variant to execute ABAP Cloud readiness checks.
+3. Now it's time to analyze the Flight Evaluation application for ABAP Cloud. Since the application logic is implemented in the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_###`** using the table **`ZFLEVAL_EX_###`** you would need only to analyze the class. You will leave the ABAP program **`ZFLIGHT_EVALUATION_EX_###`** as it is, since for the purpose of modernization in the upcoming exercises you will provide the Flight Evaluation application with the new SAP Fiori UI and will not need the ABAP program any longer. Select the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_###`** in the Project Explorer and use the context menu **Run As->ABAP Test Cockpit With...** with the **ABAP_CLOUD_READINESS** check variant to execute ABAP Cloud readiness checks.
  
    <br>![](/exercises/ex1/images/dt260_ex1_3_run_atc.png)
 
@@ -36,15 +35,15 @@ After completing these steps you will have understood how the Flight Evaluation 
    <br>![](/exercises/ex1/images/dt260_ex1_4_atc_results.png)
 
 
-## Exercise 1.2 Transform the application logic to the ABAP Cloud
+### Exercise 1.2 Transform the application logic to the ABAP Cloud
 
-After completing these steps you will have adopted the application logic of the Flight Evaluation application in the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** to ABAP Cloud development model.
+After completing these steps you will have adopted the application logic of the Flight Evaluation application in the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_###`** to ABAP Cloud development model.
 
 1.	Take a look at your ABAP test cockpit (ATC) result list. It contains 10 errors and 4 warnings. Some of the ATC findings there have a yellow light bulb indicating, that such findings can be fixed in a semi-automated way by using quick fixes. First apply all available quick fixes by proceeding as follows. Select all findings in the ATC result list (**Ctrl + A** shortcut) and use the context menu **Recommended Quick Fixes**. The wizard will display all ATC findings, which can be adapted with the quick fixes. Click on the **Next** button. The next wizard screen will display the source code of the class in the original state and after applying the quick fxes. ***OPTIONAL:*** *You can review the changes by using* ***Up*** and ***Down*** *buttons on the right upper side of the editors toolbar of the wizard.* Finally click on the **Finish** button to apply all changes.
 
    <br>![](/exercises/ex1/images/dt260_ex1_5_run_quick_fixes.png)
 
-2. Save and activate your ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and rerun ATC with the **ABAP_CLOUD_READINESS** check variant. After applying the quick fixes you will have out of 10 errors and 4 warnings only 4 remaining errors in your ATC result list, which you would need now to fix manually.
+2. Save and activate your ABAP class **`ZCL_FLIGHT_EVALUATION_EX_###`** and rerun ATC with the **ABAP_CLOUD_READINESS** check variant. After applying the quick fixes you will have out of 10 errors and 4 warnings only 4 remaining errors in your ATC result list, which you would need now to fix manually.
    
    <br>![](/exercises/ex1/images/dt260_ex1_6_atc_result_after_quick_fixes.png)
 
@@ -80,11 +79,11 @@ After completing these steps you will have adopted the application logic of the 
    
    <br>![](/exercises/ex1/images/dt260_ex1_11_atc_tables_issues.png)
 
-6. Create your own CDS view **`ZDT260_C_SBOOK_EX_##`** by proceeding as follows. Go to your ABAP package **`ZDT260_EX_##`** in the Project Explorer and using the context menu select **New->Other ABAP Repository Object->Core Data Services**, choose **Data Definition** and click on the **Next** button. Enter the **Name** **`ZDT260_C_SBOOK_EX_##`** and any **Description**. Click further on the **Next** button and choose **defineViewEntity** from the CDS Data Definition templates. Click on the **Finish** button.
+6. Create your own CDS view **`ZDT260_C_SBOOK_EX_###`** by proceeding as follows. Go to your ABAP package **`ZDT260_EX_###`** in the Project Explorer and using the context menu select **New->Other ABAP Repository Object->Core Data Services**, choose **Data Definition** and click on the **Next** button. Enter the **Name** **`ZDT260_C_SBOOK_EX_###`** and any **Description**. Click further on the **Next** button and choose **defineViewEntity** from the CDS Data Definition templates. Click on the **Finish** button.
 
    <br>![](/exercises/ex1/images/dt260_ex1_12_create_cds_view.png)
 
-   Replace the source code in the editor window with this code and replace **`##`** with your group number. Save and activate your CDS view.
+   Replace the source code in the editor window with this code and replace **`###`** with your group number. Save and activate your CDS view.
 
    ```abap
    @AbapCatalog.viewEnhancementCategory: [#NONE]
@@ -96,7 +95,7 @@ After completing these steps you will have adopted the application logic of the 
        sizeCategory: #S,
        dataClass: #MIXED
    }
-   define view entity ZDT260_C_SBOOK_EX_## as select from sbook   as booking
+   define view entity ZDT260_C_SBOOK_EX_### as select from sbook   as booking
        inner join   scustom as customer on customer.id = booking.customid
    
    {
@@ -129,10 +128,10 @@ After completing these steps you will have adopted the application logic of the 
          customer.name                                               as Name
    }
    ```
-7. Replace the **SELECT FROM SBOOK**-statement with this code, using your new CDS view, and replace **`##`** with your group number.
+7. Replace the **SELECT FROM SBOOK**-statement with this code, using your new CDS view, and replace **`###`** with your group number.
 
    ```abap
-       SELECT FROM zdt260_c_sbook_ex_## AS booking FIELDS *
+       SELECT FROM zdt260_c_sbook_ex_### AS booking FIELDS *
          WHERE booking~carrid = @i_carrid
            AND booking~connid = @i_connid
            AND booking~fldate = @i_fldate
@@ -145,11 +144,11 @@ After completing these steps you will have adopted the application logic of the 
 
 8. Run the Flight Evaluation application again to verify that it works exactly as before by repeating the steps 1-2 from the **Exercise 1.1**.
 
-## Exercise 1.3 Move the ABAP Cloud ready development objects to the ABAP Cloud development package
+### Exercise 1.3 Move the ABAP Cloud ready development objects to the ABAP Cloud development package
 
-After completing these steps you will have moved your ABAP Cloud ready development objects to your ABAP Cloud development package **`ZDT260_EX_##_5`**. 
+After completing these steps you will have moved your ABAP Cloud ready development objects to your ABAP Cloud development package **`ZDT260_EX_###_5`**. 
    
-1. Before you move your ABAP Cloud ready development artifacts to your ABAP Cloud development package, you need to switch their language version to *ABAP for Cloud Development*. For this open the **Properties** view (menu **Window->Show View->Properties**). Display the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** subsequently in the **Properties** view (context menu in the Project Explorer **Show In -> Properties**) and on the ***General*** tab switch the language version using the **Edit..** button to *ABAP for Cloud Development*. Save and activate the class and the table.
+1. Before you move your ABAP Cloud ready development artifacts to your ABAP Cloud development package, you need to switch their language version to *ABAP for Cloud Development*. For this open the **Properties** view (menu **Window->Show View->Properties**). Display the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_###`** and the table **`ZFLEVAL_EX_###`** subsequently in the **Properties** view (context menu in the Project Explorer **Show In -> Properties**) and on the ***General*** tab switch the language version using the **Edit..** button to *ABAP for Cloud Development*. Save and activate the class and the table.
 
    <br>![](/exercises/ex1/images/dt260_ex1_14_switch_lgv_5.png)
 
@@ -158,26 +157,26 @@ After completing these steps you will have moved your ABAP Cloud ready developme
 
    <br>![](/exercises/ex1/images/dt260_ex1_17_release_transports.png)
    
-3.	Move the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** to the ABAP Cloud development package **`ZDT260_EX_##_5`** by selecting subsequently the context menu **Change Package Assignment...** and providing **`ZDT260_EX_##_5`**
+3.	Move the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_###`** and the table **`ZFLEVAL_EX_###`** to the ABAP Cloud development package **`ZDT260_EX_###_5`** by selecting subsequently the context menu **Change Package Assignment...** and providing **`ZDT260_EX_###_5`**
 as a new package on the wizard. Clicking on the **Next** button will complete the package assignement.
 
    <br>![](/exercises/ex1/images/dt260_ex1_15_chg_pkg_assign_cloud.png)
 
-4.	As a result your ABAP Cloud ready ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** and the table **`ZFLEVAL_EX_##`** are now moved to the ABAP Cloud development package **`ZDT260_EX_##_5`** whereby the ABAP program  **`ZFLIGHT_EVALUATION_EX_##`** and the CDS view **`ZDT260_C_SBOOK_EX_##`** remain in the standard ABAP package **`ZDT260_EX_##`**
+4.	As a result your ABAP Cloud ready ABAP class **`ZCL_FLIGHT_EVALUATION_EX_###`** and the table **`ZFLEVAL_EX_###`** are now moved to the ABAP Cloud development package **`ZDT260_EX_###_5`** whereby the ABAP program  **`ZFLIGHT_EVALUATION_EX_###`** and the CDS view **`ZDT260_C_SBOOK_EX_###`** remain in the standard ABAP package **`ZDT260_EX_###`**
 
    <br>![](/exercises/ex1/images/dt260_ex1_16_chg_pkg_assign_cloud_result.png)
 
-5. Now activate the table **`ZFLEVAL_EX_##`** and the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`**. While activating the class you will get the error message stating hat the class has syntax errors and requestng you to run syntax check. Execute syntax check for the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`** (shortcut **Ctrl + F2**) and take a look at the syntax errors. They all are caused by accesses to the CDS view **`ZDT260_C_SBOOK_EX_##`**. The rules of ABAP Cloud development prescribe, that ABAP Cloud artefacts can only access development objects, which are released for ABAP Cloud. The CDS view must be released for internal ABAP Cloud consumption in the system. Let's do it in the next step.
+5. Now activate the table **`ZFLEVAL_EX_###`** and the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_###`**. While activating the class you will get the error message stating hat the class has syntax errors and requestng you to run syntax check. Execute syntax check for the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_###`** (shortcut **Ctrl + F2**) and take a look at the syntax errors. They all are caused by accesses to the CDS view **`ZDT260_C_SBOOK_EX_###`**. The rules of ABAP Cloud development prescribe, that ABAP Cloud artefacts can only access development objects, which are released for ABAP Cloud. The CDS view must be released for internal ABAP Cloud consumption in the system. Let's do it in the next step.
 
    <br>![](/exercises/ex1/images/dt260_ex1_14_activate_syntax_errors.png)
    
-6. Go to your CDS view **`ZDT260_C_SBOOK_EX_##`** in the Project Explorer and use the context menu **API State -> Add Use System-Internally (Contract C1)...** . Follow the wizard by clicking on the **Next** and **Finish** buttons to release the CDS view for use in ABAP Cloud development internally in this development system.
+6. Go to your CDS view **`ZDT260_C_SBOOK_EX_###`** in the Project Explorer and use the context menu **API State -> Add Use System-Internally (Contract C1)...** . Follow the wizard by clicking on the **Next** and **Finish** buttons to release the CDS view for use in ABAP Cloud development internally in this development system.
 
    <br>![](/exercises/ex1/images/dt260_ex1_13_release_cds.png)
    
-7. Finally you can activate the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_##`**.
+7. Finally you can activate the ABAP class **`ZCL_FLIGHT_EVALUATION_EX_###`**.
    
-## Summary
+### Summary
 
 You've now got to know the SAPGUI-based Flight Evaluation application, analyzed its application logic for ABAP Cloud readiness, adapted the related development artifacts to the ABAP Cloud, created your own custom CDS view for missing SAP released CDS view for ABAP Cloud and moved your ABAP Cloud development artifacts to the ABAP Cloud development package.
 Continue to - [Exercise 2 - Create SAP Fiori application for Flight Evaluation with ABAP Cloud and RAP.

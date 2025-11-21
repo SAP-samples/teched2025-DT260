@@ -4,17 +4,16 @@ The Customer Dashboard application is content-wise connected with the Flight Eva
 In this exercise, you will analyze the Customer Dashboard application for ABAP Cloud and clean core, learn to interpret clean core issues and understand why the new clean core ABAP test cockpit (ATC) checks significantly reduce the number of findings.
 
 
-## 🔴 Important Information
+### 🔴 Important Information
 
 > **📌 Note**   
 > We’ve got sessions running in several locations → please pick the one that’s right for you!
 
 > **📌 Replace the two digits to get your group number:**
-> * ZDT260_EX_**##** → **01** → **40** → **SAP TechEd Berlin**  (e.g ``ZDT260_EX_19``)
-> * ZDT260_EX_**6##** → **600** → **699** → **ASUG Tech-Connect**  (e.g ``ZDT260_EX_623``)
+> * ZDT260_EX_**7###** → **700** → **799** → **SAP TechEd Bangalore**  (e.g ``ZDT260_EX_723``)
 
 
-## Exercise 3.1 Analyze Customer Dashboard application for ABAP Cloud with ABAP test cockpit (ATC)
+### Exercise 3.1 Analyze Customer Dashboard application for ABAP Cloud with ABAP test cockpit (ATC)
 
 After completing these steps you will have understood how the Customer Dashboard application works and executed ABAP Cloud readiness checks with ABAP test cockpit (ATC) to get the ATC result list of the incompatible issues with ABAP Cloud.
 
@@ -28,7 +27,7 @@ After completing these steps you will have understood how the Customer Dashboard
    
    For the adaptation of the code to ABAP Cloud all these ATC findings must be fixed. But in this exercise the Customer Dashboard application must just become clean core compliant, therefore the ATC check procedure must be changed to clean core.  
 
-## Exercise 3.2 Analyze Customer Dashboard application for clean core with ABAP test cockpit (ATC) and get to know Cloudification Repository Viewer
+### Exercise 3.2 Analyze Customer Dashboard application for clean core with ABAP test cockpit (ATC) and get to know Cloudification Repository Viewer
 
 After completing these steps you will have learned how to execute clean core ATC checks and to work with the Cloudification Repository Viewer.
 
@@ -64,7 +63,7 @@ After completing these steps you will have learned how to execute clean core ATC
 
 7. Play auround with the Cloudification Repository Viewer looking for the APIs, for example look for the API which you are familiar with, to verify if it was nominated as a classic API. By the way you can also choose another repository under **Repository Selection** and look for example for released APIs for the particular SAP S/4HANA edition.
      
-## Exercise 3.3 Understand clean core ABAP test cockpit (ATC) issues
+### Exercise 3.3 Understand clean core ABAP test cockpit (ATC) issues
 
 After completing these steps you will have learned how the clean core ATC check variant looks like and how to understand clean core ATC check results.
 
@@ -77,7 +76,7 @@ After completing these steps you will have learned how the clean core ATC check 
     <br>![](/exercises/ex3/images/dt260_ex3_10_analyze_cc_atc_findings.png)
    
 
-## Summary
+### Summary
 You've now got to know the SAPGUI-based Customer Dashboard application, analyzed it for ABAP Cloud readiness and for clean core using ABAP test cockpit (ATC) and experienced how the ATC errors go down when using the new ATC clean core checks based on usage guidelines for SAP APIs instead of ABAP Cloud readiness checks based on usage of released APIs. You have learned how to work with the Cloudification Repository on the GitHub and look up the classic APIs. Finally you have received the basic guidance how to fix clean core ATC issues.
 
 Go to start - [DT260 - Modernize classic extensions to clean core in Cloud ERP Private ](../../README.md)
