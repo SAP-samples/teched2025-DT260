@@ -8,7 +8,7 @@ In this exercise, you will prepare your ABAP development tools for Eclipse envir
 > We’ve got sessions running in several locations → please pick the one that’s right for you!
 
 > **📌 Replace the two digits to get your group number:**
-> * ZDT260_EX_**7##** → **700** → **799** → **SAP TechEd Bangalore**  (e.g ``ZDT260_EX_723``)
+> * ZDT260_EX_**8##** → **801** → **899** → **DSAG-TechXchange 2026**  (e.g ``ZDT260_EX_823``)
 
 
 ## Introduction
