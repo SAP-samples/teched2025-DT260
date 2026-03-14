@@ -54,10 +54,15 @@ After completing these steps, you will be able to enter and store customer fligh
             i_fldate = ls_update-Fldate
             i_bookid = ls_update-BookID
         ).
-        eval_obj->set_flight_rating( ls_update-FlightRating ).
-        eval_obj->set_meal_rating( ls_update-MealRating ).
-        eval_obj->set_service_rating( ls_update-ServiceRating ).
-
+        IF ls_update-%control-FlightRating EQ if_abap_behv=>mk-on.
+          eval_obj->set_flight_rating( ls_update-FlightRating ).
+        ENDIF.
+        IF ls_update-%control-MealRating EQ if_abap_behv=>mk-on.
+          eval_obj->set_meal_rating( ls_update-MealRating ).
+        ENDIF.
+        IF ls_update-%control-ServiceRating EQ if_abap_behv=>mk-on.
+          eval_obj->set_service_rating( ls_update-ServiceRating ).
+        ENDIF.
         eval_obj->save_on_db( ).
       ENDLOOP.
     ELSEIF delete IS NOT INITIAL.
