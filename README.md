@@ -14,7 +14,7 @@ In this session you will practice a clean core extensibility in SAP S/4HANA Clou
 The requirements to follow the exercises in this repository are:
 - [ABAP Development Tools for Eclipse](https://tools.hana.ondemand.com/#abap)
 - SAP GUI [SAP-Help Portal](https://help.sap.com/docs/ABAP_PLATFORM_NEW/b1c834a22d05483b8a75710743b5ff26/9ad405e746ef43288755cb80a14be542.html?locale=en-US&version=LATEST)
-- Access to the backend system HE4, where all code examples are located, basic knowledge of the ABAP development tools for Eclipse and ABAP test cockpit (ATC).
+- Access to the backend system HE4 (will be provided by your instructor), where all code examples are located, basic knowledge of the ABAP development tools for Eclipse and ABAP test cockpit (ATC).
 
 ## Exercises
 
