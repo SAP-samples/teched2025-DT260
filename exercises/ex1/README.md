@@ -153,7 +153,7 @@ After completing these steps you will have moved your ABAP Cloud ready developme
    <br>![](/exercises/ex1/images/dt260_ex1_14_switch_lgv_5.png)
 
 
-2. Before moving your development artifacts you need to release your transports, containing them. For this open the Transport Organizer using menu **Window -> Show view -> Other...** and selecting **ABAP -> Transport Organizer**. Release your transports.
+2. 🔴 Important - Before moving your development artifacts **you need to release your transports**, containing them. For this open the Transport Organizer using menu **Window -> Show view -> Other...** and selecting **ABAP -> Transport Organizer**. Release your transports.
 
    <br>![](/exercises/ex1/images/dt260_ex1_17_release_transports.png)
    
