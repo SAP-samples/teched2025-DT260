@@ -32,7 +32,7 @@ In this exercise, you will prepare your ABAP development tools for Eclipse envir
 
 ------------------------
 
-   > For **ASUG TechConnect** or if you don't see **`HE4`** in the list do the following:  
+   > For **DSAG TechXchange 2026** do the following:  
 
    <details>
    <summary>Click to expand</summary>  
