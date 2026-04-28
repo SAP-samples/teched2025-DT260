@@ -25,7 +25,7 @@ After completing these steps you will have created the modern SAP Fiori RAP-base
    
 3. The generated SAP Fiori Flight Evaluation application starts. Click on the **Go** button to see the flight evaluations. Currently only the flight evaluations, which you created in the Exercise 1 can be displayed. Creating additional flight evalulations would be possible but those could be inconsistent since there is no business logic implemented yet that e.g. would  prevent you to enter data for not existing bookings.
 
-> ℹ️ Please replace the system URL by the System IP:
+> ℹ️ **Please replace the system address `vhcals4hcs.dummy.nodomain` in the URL by the provided system IP adress (`52.215.???.???`) and logon with your ABAP user credentials:**
 > 
 >  `https://vhcals4hcs.dummy.nodomain:44301/sap/bc/adt/businessservices/`
 > 
