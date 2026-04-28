@@ -18,7 +18,7 @@ In this exercise, you will modernize the Flight Evaluation application using ABA
 
 After completing these steps you will have understood how the Flight Evaluation application works and executed ABAP test cockpit (ATC) ABAP Cloud readiness checks to get the ATC result list of the incompatible issues with ABAP Cloud.
 
-1. Start the Flight Evaluation application. Run the ABAP program  **`ZFLIGHT_EVALUATION_EX_###`** by selecting it in the Project Explorer and clicking **F8** button. The program will be started in ABAP development tools for Eclipse embedded in the SAP GUI. Enter the carrier id **A**, connection id **0017** and flight date e.g **16.04.2021** (US: **09/16/2021**) as proposed on the screenshot and click **Execute** button.
+1. Start the Flight Evaluation application. Run the ABAP program  **`ZFLIGHT_EVALUATION_EX_###`** by selecting it in the Project Explorer and clicking **F8** button. The program will be started in ABAP development tools for Eclipse embedded in the SAP GUI. Enter the carrier id **AA**, connection id **0017** and flight date e.g **16.09.2021** (US: **09/16/2021**) as proposed on the screenshot and click **Execute** button.
    
    <br>![](/exercises/ex1/images/dt260_ex1_1_start_abap_program.png)
 
