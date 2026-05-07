@@ -8,12 +8,12 @@ In this exercise, you will prepare your ABAP development tools for Eclipse envir
 > We’ve got sessions running in several locations → please pick the one that’s right for you!
 
 > **📌 Replace the two digits to get your group number:**
-> * ZDT260_EX_**8##** → **801** → **899** → **DSAG-TechXchange 2026**  (e.g ``ZDT260_EX_823``)
+> * ZDT260_EX_**##** → **01** → **70** → **DSAG ABAP Development Days 2026**  (e.g ``ZDT260_EX_23``)
 
 
 ## Introduction
 
-1. The screenshots for these exercises have been prepared in the SAP TechEd system **`HE4`** using ABAP user **`DT260-00`** with the group ID **`00`**.
+1. The screenshots for these exercises have been prepared in the system **`HE4`** using ABAP user **`DT260-00`** with the group ID **`00`**.
 2. The explanation in the exercises will remind you to use your group number (indicated by **`###`**), e.g. ABAP class **`ZCL_FLIGHT_EVALUATION_EX_###`**. 
 3. You will work in the standard ABAP package **`ZDT260_EX_###`** and transform your cloud ready ABAP artfacts to the ABAP Cloud package **`ZDT260_EX_###_5`**, where "5" indicates ABAP for Cloud Development language version.
 4. Please note that ABAP development tools for Eclipse dialogs and views, as well as SAP Fiori UIs, may change in future releases.
@@ -25,14 +25,14 @@ In this exercise, you will prepare your ABAP development tools for Eclipse envir
    
    <br>![](/exercises/ex0/images/dt260_ex0_1_start_eclipse.png)
 
-2.	Create ABAP project by selecting **File** > **New** > **ABAP Project** and connect to the SAP TechEd system **`HE4`**. Use client **`400`**, your user **`DT260-###`**, and the password provided by the instructors.   
+2.	Create ABAP project by selecting **File** > **New** > **ABAP Project** and connect to the system **`S4H`**. Use client **`100`**, your user **`DT260-###`**, and the password provided by the instructors.   
 
    ![](/exercises/ex0/images/dt260_ex0_2_create_abap_project.png)   
    <br>  
 
 ------------------------
 
-   > For **DSAG TechXchange 2026** do the following:  
+   > For ***DSAG ABAP Development Days 2026** do the following:  
 
    <details>
    <summary>Click to expand</summary>  
@@ -42,9 +42,9 @@ In this exercise, you will prepare your ABAP development tools for Eclipse envir
    > ![new abap project](./images/dt260_ex0_10_add_new_system_connection.png)  
    >  
    > In the following screen enter 
-   > - *System Id:* **`HE4`**
+   > - *System Id:* **`S4H`**
    > - *Connection Type:* select **`Custom Application Server`** from the drop down list
-   > - *Application Server*: **`s4hana.tdc.sap.com` 
+   > - *Application Server*: **`ec2-63-180-163-233.eu-central-1.compute.amazonaws.com` 
    > - *Instance Number:* **`00`** 
    > - *▢* : **`Secure Network Communication (SNC)`**   
    >      
@@ -53,13 +53,13 @@ In this exercise, you will prepare your ABAP development tools for Eclipse envir
    >  
    > ![new abap project](./images/dt260_ex0_11_add_new_system_connection.png)   
    >  
-   > Click the **Next >** button to continue and use client **`400`**, your user **`DT260-###`**, and the password provided by the instructors.  to log on onto the system. 
+   > Click the **Next >** button to continue and use client **`100`**, your user **`DT260-##`**, and the password provided by the instructors.  to log on onto the system. 
    </details>
 
 ----------------
 
 
-3. Add your exercises packages for your group **`###`** to the **Favorite Packages*.
+3. Add your exercises packages for your group **`##`** to the **Favorite Packages*.
    
    <br>![](/exercises/ex0/images/dt260_ex0_3_add_fav_pkgs.png)
 
