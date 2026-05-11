@@ -27,15 +27,15 @@ In this exercise, you will prepare your ABAP development tools for Eclipse envir
 
 2.	Create ABAP project by selecting **File** > **New** > **ABAP Project** and connect to the system **`S4H`**. Use client **`100`**, your user **`DT260-###`**, and the password provided by the instructors.   
 
-   ![](/exercises/ex0/images/dt260_ex0_2_create_abap_project.png)   
+   <!--![](/exercises/ex0/images/dt260_ex0_2_create_abap_project.png)  -->
    <br>  
 
 ------------------------
 
    > For ***DSAG ABAP Development Days 2026** do the following:  
 
-   <details>
-   <summary>Click to expand</summary>  
+   <!--<details>-->
+   <!--<summary>Click to expand</summary>  -->
 
    > Define a new connection by clicking on the link  **new system connection**.  
    >  
@@ -51,10 +51,10 @@ In this exercise, you will prepare your ABAP development tools for Eclipse envir
    > ⚠️ Be sure to **deactivate** the SNC checkbox. 
    >     
    >  
-   > ![new abap project](./images/dt260_ex0_11_add_new_system_connection.png)   
+   > ![new abap project](./images/dt260_ex0_11_add_new_system_connection_S4H.png)   
    >  
    > Click the **Next >** button to continue and use client **`100`**, your user **`DT260-##`**, and the password provided by the instructors.  to log on onto the system. 
-   </details>
+   <!--</details>-->
 
 ----------------
 
