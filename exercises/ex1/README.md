@@ -11,7 +11,7 @@ In this exercise, you will modernize the Flight Evaluation application using ABA
 > We’ve got sessions running in several locations → please pick the one that’s right for you!
 
 > **📌 Replace the two digits to get your group number:**
-> * ZDT260_EX_**##** → **01** → **70** → **DSAG ABAP Development Days 2026**  (e.g ``ZDT260_EX_23``)
+> * ZDT260_EX_**##** → **01** → **64** → **VNSG ABAP Development Days 2026**  (e.g ``ZDT260_EX_23``)
 
 ### Exercise 1.1 Get to know the Flight Evaluation application and analyze it for ABAP Cloud with ABAP test cockpit (ATC)
 
