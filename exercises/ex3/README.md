@@ -10,7 +10,7 @@ In this exercise, you will analyze the Customer Dashboard application for ABAP C
 > We’ve got sessions running in several locations → please pick the one that’s right for you!
 
 > **📌 Replace the two digits to get your group number:**
-> * ZDT260_EX_**##** → **01** → **70** → **DSAG ABAP Development Days 2026**  (e.g ``ZDT260_EX_23``)
+> * ZDT260_EX_**##** → **01** → **64** → **VNSG ABAP Development Days 2026**  (e.g ``ZDT260_EX_23``)
 
 
 ### Exercise 3.1 Analyze Customer Dashboard application for ABAP Cloud with ABAP test cockpit (ATC)
